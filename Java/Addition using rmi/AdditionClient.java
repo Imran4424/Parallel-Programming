@@ -34,5 +34,10 @@ public class AdditionClient
 			System.out.println("NotBoundException");
 			System.out.println(nbe);
 		}
+		catch (java.lang.ArithmeticException ae) {
+			System.out.println();
+			System.out.println("java.lang.ArithmeticException");
+			System.out.println(ae);
+		}
 	}
 }
