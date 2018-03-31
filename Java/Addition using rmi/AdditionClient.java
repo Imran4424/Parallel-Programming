@@ -24,5 +24,10 @@ public class AdditionClient
 			System.out.println("MalformedURLException");
 			System.out.println(murle);
 		}
+		catch (RemoteException re) {
+			System.out.println();
+			System.out.println("RemoteException");
+			System.out.println(re);
+		}
 	}
 }
