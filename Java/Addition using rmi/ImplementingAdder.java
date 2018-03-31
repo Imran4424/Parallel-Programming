@@ -1,5 +1,5 @@
-import java.rmi.*
-import java.rmi.server.*
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
 
 
-public class
+public class ImplementatingAdder extends UnicastRemoteObject
