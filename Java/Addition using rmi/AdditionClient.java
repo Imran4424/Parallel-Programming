@@ -15,7 +15,7 @@ public class AdditionClient
 		{
 			Adder obj = (Adder) Naming.lookup("rmi://localhost/AdderService");
 			
-			System.out.println( "The addition of "+ x +" and "+ y +"is: "+ obj.add(x, y) );
+			System.out.println( "The addition of "+ x +" and "+ y +" is: "+ obj.add(x, y) );
 		
 		}
 		catch (MalformedURLException murle) 
