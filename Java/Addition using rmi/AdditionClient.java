@@ -29,5 +29,10 @@ public class AdditionClient
 			System.out.println("RemoteException");
 			System.out.println(re);
 		}
+		catch (NotBoundException nbe) {
+			System.out.println();
+			System.out.println("NotBoundException");
+			System.out.println(nbe);
+		}
 	}
 }
