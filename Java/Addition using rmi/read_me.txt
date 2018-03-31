@@ -15,3 +15,13 @@ Steps to compile and run
 		1.	javac *.java
 		2.	rmic ImplementingAdder
 		3.	rmiregistry
+
+
+	In second terminal:
+
+			java AdditionServer
+
+
+	In third terminal:
+
+			java AdditionClient
