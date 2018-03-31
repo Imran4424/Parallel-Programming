@@ -16,7 +16,7 @@ public class ImplementingAdder extends UnicastRemoteObject implements Adder
 
 	public int add(int x,int y) throws RemoteException
 	{
-		return a+b;
+		return x+y;
 	}
 
 }
