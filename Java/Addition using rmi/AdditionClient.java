@@ -18,5 +18,11 @@ public class AdditionClient
 			System.out.println( "The addition of "+ x +" and "+ y +"is: "+ obj.add(x, y) );
 		
 		}
+		catch (MalformedURLException murle) 
+		{
+			System.out.println();
+			System.out.println("MalformedURLException");
+			System.out.println(murle);
+		}
 	}
 }
