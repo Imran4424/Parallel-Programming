@@ -13,10 +13,9 @@ public class AdditionClient
 
 		try
 		{
-			Adder obj = (Adder)
-			Naming.lookup("rmi://localhost/AdderService");
+			Adder obj = (Adder) Naming.lookup("rmi://localhost/AdderService");
 			
-			System.out.println( "The addition of "+ x +" and "+ y +"is: "+ obj.add(num1, num2) );
+			System.out.println( "The addition of "+ x +" and "+ y +"is: "+ obj.add(x, y) );
 		
 		}
 	}
