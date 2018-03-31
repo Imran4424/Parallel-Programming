@@ -8,6 +8,8 @@ public class AdditionServer
 		try
 		{
 			Adder obj = new ImplementingAdder();
+
+			Naming.rebind("rmi://localhost:1099/AdderService", obj);
 		}
 	}
 }
