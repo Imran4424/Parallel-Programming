@@ -13,4 +13,10 @@ public class ImplementatingAdder extends UnicastRemoteObject implements Adder
 		super();
 	}
 
+
+	public int add(int x,int y) throws RemoteException
+	{
+		
+	}
+
 }
