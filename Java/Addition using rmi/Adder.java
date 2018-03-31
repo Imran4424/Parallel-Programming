@@ -1,4 +1,4 @@
-import java.rmi.remote;
+import java.rmi.Remote;
 
 public interface Adder extends Remote
 {
