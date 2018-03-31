@@ -7,7 +7,7 @@ public class AdditionServer
 	{
 		try
 		{
-			
+			Adder obj = new ImplementingAdder();
 		}
 	}
 }
