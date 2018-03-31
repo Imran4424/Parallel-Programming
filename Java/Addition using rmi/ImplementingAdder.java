@@ -8,4 +8,9 @@ public class ImplementatingAdder extends UnicastRemoteObject implements Adder
 	in order to declare the RemoteException exception
 */
 
+	public ImplementatingAdder() throws RemoteException
+	{
+		
+	}
+
 }
