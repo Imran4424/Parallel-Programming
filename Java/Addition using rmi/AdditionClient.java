@@ -8,9 +8,16 @@ public class AdditionClient
 {
 	public static void main(String[] args) 
 	{
-		long x = Integer.parseInt(args[0]);
-		long y = Integer.parseInt(args[1]);
+		int  x = Integer.parseInt(args[0]);
+		int  y = Integer.parseInt(args[1]);
 
+		try
+		{
+			Adder obj = (Adder)
+			Naming.lookup("rmi://localhost/AdderService");
+			
+			System.out.println( "The addition of "+ x +" and "+ y +"is: "+ obj.add(num1, num2) );
 		
+		}
 	}
 }
