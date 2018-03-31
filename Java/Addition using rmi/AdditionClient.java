@@ -6,5 +6,11 @@ import java.rmi.NotBoundException;
 
 public class AdditionClient
 {
-	
+	public static void main(String[] args) 
+	{
+		long x = Integer.parseInt(args[0]);
+		long y = Integer.parseInt(args[1]);
+
+		
+	}
 }
