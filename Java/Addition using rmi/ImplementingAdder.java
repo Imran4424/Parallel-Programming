@@ -10,7 +10,7 @@ public class ImplementatingAdder extends UnicastRemoteObject implements Adder
 
 	public ImplementatingAdder() throws RemoteException
 	{
-		
+		super();
 	}
 
 }
