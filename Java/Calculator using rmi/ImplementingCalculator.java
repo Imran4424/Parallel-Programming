@@ -30,6 +30,9 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
      }
 
 
-     
+     public int add(int x,int y) throws RemoteException
+     {
+         return x+y;
+     }
     
 }
