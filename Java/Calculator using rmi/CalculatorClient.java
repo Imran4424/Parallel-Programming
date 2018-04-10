@@ -18,7 +18,7 @@ public class CalculatorClient
 
             Calculator obj = (Calculator) Naming.lookup(url);
             
-            System.out.println("The addition of ");
+            System.out.println("The addition of " + x);
         } 
         catch (Exception e) {
             //TODO: handle exception
