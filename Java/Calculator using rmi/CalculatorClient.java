@@ -51,7 +51,7 @@ public class CalculatorClient
         }
         catch (ArithmeticException arexc)
         {
-
+            System.out.println();
         }
     }
     
