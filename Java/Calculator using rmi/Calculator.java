@@ -1,8 +1,10 @@
+import java.rmi.Remote;
 
 
 /**
- * Calculator extends
+ * Calculator Interface
  */
-public interface Calculator extends {
+public interface Calculator extends Remote 
+{
     
 }
