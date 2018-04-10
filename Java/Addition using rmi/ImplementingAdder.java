@@ -4,6 +4,7 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class ImplementingAdder extends UnicastRemoteObject implements Adder
 {
+	
 /*	Implementations must have an explicit constructor
 	in order to declare the RemoteException exception
 */
