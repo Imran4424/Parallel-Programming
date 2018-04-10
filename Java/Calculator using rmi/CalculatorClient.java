@@ -24,7 +24,7 @@ public class CalculatorClient
 
             System.out.println("The multipication of " + x + " and " + y + " is: " + obj.mul(x, y));
 
-            System.out.println("The division of ");
+            System.out.println("The division of " + x + " and ");
         } 
         catch (Exception e) {
             //TODO: handle exception
