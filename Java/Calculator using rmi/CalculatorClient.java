@@ -52,7 +52,7 @@ public class CalculatorClient
         catch (ArithmeticException arexc)
         {
             System.out.println();
-            System.out.println();
+            System.out.println("Arithematic Exception");
         }
     }
     
