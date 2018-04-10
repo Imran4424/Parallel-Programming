@@ -14,6 +14,10 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
      public ImplementingCalculator() throws RemoteException
      {
          super();
+
+         /**
+          * super keyword use to called parent constructor
+          */
      }
     
 }
