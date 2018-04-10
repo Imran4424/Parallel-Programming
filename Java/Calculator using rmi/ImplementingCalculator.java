@@ -37,7 +37,7 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
 
      public int sub(int x,int y) throws RemoteException
      {
-         
+         return x-y;
      }
     
 }
