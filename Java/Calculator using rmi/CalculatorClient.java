@@ -16,7 +16,7 @@ public class CalculatorClient
         {
             String url = "rmi://localhost/CalculatorService";
 
-            Calculator obj = (Calculator) Naming.lookup(name)    
+            Calculator obj = (Calculator) Naming.lookup(url)    
         } 
         catch (Exception e) {
             //TODO: handle exception
