@@ -1,4 +1,4 @@
-
+import java.rmi.Naming;
 
 /**
  * CalculatorClient
@@ -14,7 +14,7 @@ public class CalculatorClient
 
         try 
         {
-            Calculator obj = (Calculator)    
+            Calculator obj = (Calculator) Naming.lookup(name)    
         } 
         catch (Exception e) {
             //TODO: handle exception
