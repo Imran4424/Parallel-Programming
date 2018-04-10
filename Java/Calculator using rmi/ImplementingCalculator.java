@@ -1,3 +1,4 @@
+import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
@@ -9,5 +10,10 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
      * Implementations must have a explicit constructor
      * in order to throw RemoteException exception
      */
+
+     public ImplementingCalculator() throws RemoteException
+     {
+         super();
+     }
     
 }
