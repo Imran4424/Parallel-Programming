@@ -1,3 +1,4 @@
+import java.net.MalformedURLException;
 import java.rmi.Naming;
 
 /**
@@ -27,7 +28,7 @@ public class CalculatorClient
             System.out.println("The division of " + x + " and " + y + " is: " + obj.division(x, y));
 
         } 
-        catch (Exception e) 
+        catch (MalformedURLException e) 
         {
             System.out.println();    
 
