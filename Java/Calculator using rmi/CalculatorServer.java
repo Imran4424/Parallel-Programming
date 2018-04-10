@@ -11,7 +11,7 @@ public class CalculatorServer
         {
             Calculator obj = new ImplementingCalculator();
 
-            String url = "rmi://localhost:1099/CalculalorService";
+            String url = "rmi://localhost:1099/CalculatorService";
 
             Naming.rebind(url, obj);
             
