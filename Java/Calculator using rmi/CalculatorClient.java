@@ -46,7 +46,7 @@ public class CalculatorClient
         catch (NotBoundException notbe)
         {
             System.out.println();
-            System.out.println();
+            System.out.println("Not Bound Exception");
         }
     }
     
