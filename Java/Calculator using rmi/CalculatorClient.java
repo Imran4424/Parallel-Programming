@@ -28,7 +28,7 @@ public class CalculatorClient
             System.out.println("The division of " + x + " and " + y + " is: " + obj.division(x, y));
 
         } 
-        catch (MalformedURLException e) 
+        catch (MalformedURLException malurl) 
         {
             System.out.println();    
 
