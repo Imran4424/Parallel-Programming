@@ -25,7 +25,7 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
           *
           * and we all know that what constructor is, constructure initialize the object values with given values
           *
-          * for default constructors the
+          * for default constructors, the object values will be initialized with default values
           */
      }
     
