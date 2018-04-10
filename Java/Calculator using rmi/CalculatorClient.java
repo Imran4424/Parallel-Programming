@@ -1,5 +1,6 @@
 import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.RemoteException;
 
 /**
  * CalculatorClient
@@ -34,6 +35,10 @@ public class CalculatorClient
             System.out.println("Malfromed URL Exception");
             System.out.println(malurl);    
 
+        }
+        catch (RemoteException re)
+        {
+            
         }
     }
     
