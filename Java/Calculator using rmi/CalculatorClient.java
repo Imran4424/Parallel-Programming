@@ -32,7 +32,7 @@ public class CalculatorClient
         {
             System.out.println();
             System.out.println("Malfromed URL Exception");
-            System.out.println();    
+            System.out.println("");    
 
         }
     }
