@@ -31,7 +31,7 @@ public class CalculatorClient
         catch (MalformedURLException malurl) 
         {
             System.out.println();
-            System.out.println("Malfromed");    
+            System.out.println("Malfromed URL Exception");    
 
         }
     }
