@@ -12,9 +12,11 @@ public class CalculatorClient
 
         int y = Integer.parseInt(args[1]);
 
-        try {
+        try 
+        {
             
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             //TODO: handle exception
         }
     }
