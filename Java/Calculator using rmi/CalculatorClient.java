@@ -14,7 +14,7 @@ public class CalculatorClient
 
         try 
         {
-            String
+            String url = "";
 
             Calculator obj = (Calculator) Naming.lookup(name)    
         } 
