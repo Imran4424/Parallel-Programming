@@ -20,7 +20,7 @@ public class CalculatorClient
             
             System.out.println("The addition of " + x + " and " + y + " is: " + obj.add(x, y));
 
-            System.out.prin
+            System.out.println();
         } 
         catch (Exception e) {
             //TODO: handle exception
