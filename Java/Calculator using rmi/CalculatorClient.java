@@ -14,6 +14,8 @@ public class CalculatorClient
 
         try 
         {
+            String
+
             Calculator obj = (Calculator) Naming.lookup(name)    
         } 
         catch (Exception e) {
