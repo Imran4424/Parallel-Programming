@@ -44,5 +44,17 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
      {
          return x*y;
      }
+
+     public int division(int x,int y) throws RemoteException
+     {
+         if(y == 0)
+         {
+             System.out.println("Math Error");
+         }
+         else
+         {
+            
+         }
+     }
     
 }
