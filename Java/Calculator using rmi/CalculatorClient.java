@@ -1,5 +1,6 @@
 import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 /**
@@ -41,6 +42,10 @@ public class CalculatorClient
             System.out.println();
             System.out.println("Remote Exception");
             System.out.println(re);
+        }
+        catch (NotBoundException notbe)
+        {
+            
         }
     }
     
