@@ -14,7 +14,7 @@ public class CalculatorClient
 
         try 
         {
-            String url = "";
+            String url = "rmi://localhost/CalculatorService";
 
             Calculator obj = (Calculator) Naming.lookup(name)    
         } 
