@@ -21,6 +21,8 @@ public class CalculatorClient
             System.out.println("The addition of " + x + " and " + y + " is: " + obj.add(x, y));
 
             System.out.println("The substraction of " + x + " and " + y + " is: " + obj.sub(x, y));
+
+            
         } 
         catch (Exception e) {
             //TODO: handle exception
