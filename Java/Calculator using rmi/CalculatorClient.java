@@ -49,6 +49,10 @@ public class CalculatorClient
             System.out.println("Not Bound Exception");
             System.out.println(notbe);
         }
+        catch ()
+        {
+            
+        }
     }
     
 }
