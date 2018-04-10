@@ -22,7 +22,7 @@ public class CalculatorClient
 
             System.out.println("The substraction of " + x + " and " + y + " is: " + obj.sub(x, y));
 
-            System.out.println("The multipication of " + x + " and " +);
+            System.out.println("The multipication of " + x + " and " + y +);
         } 
         catch (Exception e) {
             //TODO: handle exception
