@@ -10,7 +10,7 @@ public class CalculatorClient
     {
         int x = Integer.parseInt(args[0]);
 
-        int 
+        int y = Integer.parseInt(args)
     }
     
 }
