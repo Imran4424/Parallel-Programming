@@ -50,10 +50,12 @@ public class ImplementingCalculator extends UnicastRemoteObject implements Calcu
          if(y == 0)
          {
              System.out.println("Math Error");
+
+             return 0;
          }
          else
          {
-            
+            return x/y;
          }
      }
     
