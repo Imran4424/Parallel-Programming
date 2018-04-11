@@ -5,7 +5,8 @@ import java.rmi.server.UnicastRemoteObject;
  */
 
 
-public class ImplementingImageProcessor1 extends UnicastRemoteObject{
+public class ImplementingImageProcessor1 extends UnicastRemoteObject implements ImageProcessor
+{
 
   
     
