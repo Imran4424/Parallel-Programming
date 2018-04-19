@@ -6,6 +6,6 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class Division extends UnicastRemoteObject implements Calculator
 {
-
+    
     
 }
