@@ -15,6 +15,6 @@ public class Substraction extends UnicastRemoteObject implements Calculator
     
     public Substraction() throws RemoteException
     {
-        
+        super();
     }
 }
