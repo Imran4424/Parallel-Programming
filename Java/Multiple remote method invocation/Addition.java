@@ -13,5 +13,8 @@ public class Addition extends UnicastRemoteObject implements Calculator
      */
 
      public Addition() throws RemoteException
+     {
+         
+     }
     
 }
