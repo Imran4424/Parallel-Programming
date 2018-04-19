@@ -33,6 +33,11 @@ public class Division extends UnicastRemoteObject implements Calculator
 
     public int sum(int x,int y) throws RemoteException
     {
-        
+        if(y == 0)
+        {
+            return 0;
+        }
+
+        return x/y;
     }
 }
