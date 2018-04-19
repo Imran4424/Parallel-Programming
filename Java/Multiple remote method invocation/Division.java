@@ -14,6 +14,6 @@ public class Division extends UnicastRemoteObject implements Calculator
     
     public Division() throws RemoteException
     {
-        super()
+        super();
     }
 }
