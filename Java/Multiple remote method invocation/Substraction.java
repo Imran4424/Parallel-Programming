@@ -33,6 +33,6 @@ public class Substraction extends UnicastRemoteObject implements Calculator
 
     public int sum(int x,int y) throws RemoteException
     {
-        
+        return x-y;
     }
 }
