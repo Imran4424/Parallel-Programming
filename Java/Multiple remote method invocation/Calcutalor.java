@@ -10,5 +10,5 @@ public interface Calcutalor extends Remote
      * Declaring method prototype
      */
     
-    public int sum(int x,int y) throws RemoteException
+    public int sum(int x,int y) throws RemoteException;
 }
