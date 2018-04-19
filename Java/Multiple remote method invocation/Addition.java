@@ -5,7 +5,8 @@
 /**
  * Addition
  */
-public class Addition extends  {
+public class Addition extends UnicastRemoteObject implements Calculator 
+{
 
     
 }
