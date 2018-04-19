@@ -14,7 +14,7 @@ public class Multipication extends UnicastRemoteObject implements Calculator
     public Multipication() throws RemoteException
     {
         super();
-
+        
         /**
         * super keyword use to called parent constructor
         * super can be used to do more specific work like
