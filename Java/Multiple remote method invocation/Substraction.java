@@ -6,5 +6,11 @@ import java.rmi.server.UnicastRemoteObject;
 public class Substraction extends UnicastRemoteObject implements Calculator
 {
 
+    /**
+     * Implementations must have a explicit constructor
+     * in order to throw RemoteException exception
+     */
     
+    
+    public
 }
