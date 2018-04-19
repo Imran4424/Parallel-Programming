@@ -31,5 +31,5 @@ public class Substraction extends UnicastRemoteObject implements Calculator
         */
     }
 
-    public int sum()
+    public int sum(int x,int y)
 }
