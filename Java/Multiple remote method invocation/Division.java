@@ -31,5 +31,5 @@ public class Division extends UnicastRemoteObject implements Calculator
 
     }
 
-    
+    public int sum(int x,int y)
 }
