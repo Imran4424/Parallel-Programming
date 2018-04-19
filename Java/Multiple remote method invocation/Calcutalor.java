@@ -9,4 +9,5 @@ public interface Calcutalor extends Remote
      * Declaring method prototype
      */
     
+    
 }
