@@ -1,12 +1,10 @@
-
-
-
+import java.rmi.server.UnicastRemoteObject;
 
 /**
  * Addition
  */
 
-public class Addition extends  implements Calculator 
+public class Addition extends UnicastRemoteObject implements Calculator 
 {
 
     
