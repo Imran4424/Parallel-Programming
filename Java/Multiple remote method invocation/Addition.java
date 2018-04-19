@@ -30,8 +30,8 @@ public class Addition extends UnicastRemoteObject implements Calculator
         */
     }
 
-    
-    
+
+    public int sum(int x,int y)
     
     
 }
