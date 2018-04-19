@@ -13,6 +13,6 @@ public class Multipication extends UnicastRemoteObject implements Calculator
     
     public Multipication() throws RemoteException
     {
-        super
+        super();
     }
 }
