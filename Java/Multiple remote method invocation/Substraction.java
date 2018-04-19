@@ -30,4 +30,6 @@ public class Substraction extends UnicastRemoteObject implements Calculator
         * for default constructors, the object values will be initialized with default values
         */
     }
+
+    public int sum()
 }
