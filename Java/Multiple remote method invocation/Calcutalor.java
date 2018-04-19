@@ -1,0 +1,9 @@
+
+
+
+/**
+ * Calcutalor
+ */
+public interface Calcutalor {
+    
+}
