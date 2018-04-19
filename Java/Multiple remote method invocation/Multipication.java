@@ -31,6 +31,6 @@ public class Multipication extends UnicastRemoteObject implements Calculator
 
     public int sum(int x,int y) throws RemoteException
     {
-        
+        return x*y;
     }
 }
