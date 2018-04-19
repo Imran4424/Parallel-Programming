@@ -1,3 +1,4 @@
+import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
@@ -10,5 +11,8 @@ public class Multipication extends UnicastRemoteObject implements Calculator
      * in order to throw RemoteException exception
      */
     
-    public Multipication()
+    public Multipication() throws RemoteException
+    {
+        super
+    }
 }
