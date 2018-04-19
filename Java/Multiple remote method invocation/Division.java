@@ -1,3 +1,4 @@
+import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
@@ -11,5 +12,5 @@ public class Division extends UnicastRemoteObject implements Calculator
      * in order to throw RemoteException exception
      */
     
-    public Division()
+    public Division() throws RemoteException
 }
