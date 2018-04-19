@@ -29,5 +29,5 @@ public class Multipication extends UnicastRemoteObject implements Calculator
         */
     }
 
-    public int sum()
+    public int sum(int x,int y) 
 }
