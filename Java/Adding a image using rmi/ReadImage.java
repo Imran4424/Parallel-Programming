@@ -2,6 +2,7 @@ import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Image;
 import java.awt.Image.*;
+import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.IOException;
 
@@ -24,7 +25,7 @@ public class ReadImage
 
     public void DisplayImage() throws IOException
     {
-        Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
+        BufferedImage img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
 
         ImageIcon icon = new ImageIcon(img);
 
@@ -40,7 +41,7 @@ public class ReadImage
 
         for(int i = 0;i < 3;i++)
         {
-            splitImages[i] = 
+            splitImages[i] = img.
         }
 
 
