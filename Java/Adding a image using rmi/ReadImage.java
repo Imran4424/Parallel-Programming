@@ -12,7 +12,7 @@ public class ReadImage
     }
     
 
-    public void DisplayImage() throws
+    public void DisplayImage() throws IOException
     {
 
     }
