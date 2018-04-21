@@ -29,7 +29,7 @@ public class ReadImage
         JFrame frame = new JFrame();
 
         frame.setLayout(new FlowLayout());
-        frame.setSize(400,300);
+        frame.setSize(1200,900);
 
         JLabel lbl = new JLabel();
         lbl.setIcon(icon);
