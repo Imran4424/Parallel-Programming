@@ -3,6 +3,7 @@ import net.coobird.thumbnailator.geometry.*;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -11,6 +12,8 @@ import java.text.ParsePosition;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.text.Position;
+import java.io.NotSerializableException;
+import java.io.Serializable;
 
 
 
@@ -54,11 +57,14 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         int w = Math.max(img.getWidth(), watermarkImage.getWidth());
         int h = Math.max(img.getHeight(), watermarkImage.getHeight());
 
-        BufferedImage combined = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage combined = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
 
-        
+        // paint both images, preserving the alpha channels
+        Graphics g = combined.getGraphics();
+        g.drawImage(img, 0, 0, null);
+        g.drawImage(watermarkImage, 10, 0, null);
        
-        return processImage;
+        return combined;
     }
 
     public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException 
