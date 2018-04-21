@@ -4,6 +4,7 @@ import java.awt.Image;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 /**
@@ -21,6 +22,8 @@ public class ReadImage
     public void DisplayImage() throws IOException
     {
         Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
+
+        ImageIcon = new ImageIcon();
 
         JFrame frame = new JFrame();
 
