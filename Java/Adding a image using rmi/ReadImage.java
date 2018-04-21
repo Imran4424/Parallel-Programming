@@ -27,39 +27,41 @@ public class ReadImage
     {
         BufferedImage img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
 
-        ImageIcon icon = new ImageIcon(img);
-
-
+        
+        
         /**
          * Dividing original image
          */
-
+        
         BufferedImage[] splitImages = new BufferedImage[3];
-
+        
         int splitHeight = img.getHeight()/3;
         int splitWidth = img.getWidth();
-
+        
         for(int i = 0;i < 3;i++)
         {
             splitImages[i] = img.getSubimage(0, i*splitHeight, splitWidth, splitHeight);
-
-/*             try 
+            
+            /*             try 
             {
                 ImageIO.write(splitImages[i], "jpg", new file("Splitimage-"+ (i+1) + ".jpg"));
             } catch (Exception e) {
                 e.printStackTrace();
             }
- */
+            */
         }
+        
+        ImageIcon icon = new ImageIcon(img);
 
+        JLabel lbl = new JLabel();
+        lbl.setIcon(icon);
 
+        
         JFrame frame = new JFrame();
 
         frame.setLayout(new FlowLayout());
         frame.setSize(1200,900);
 
-        JLabel lbl = new JLabel();
-        lbl.setIcon(icon);
         frame.add(lbl);
 
         frame.setVisible(true);
