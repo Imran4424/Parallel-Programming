@@ -4,6 +4,8 @@ import java.awt.image.BufferedImage;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
+import javax.swing.text.Position;
+
 
 /**
  * ImplementingImageProcessor
@@ -42,6 +44,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         String watermark = "First";
         Font font = new font("Monospaced",Font.PLAIN,14);
         Color c = Color.BLACK;
+        Position pos = new Position
     }
     
 }
