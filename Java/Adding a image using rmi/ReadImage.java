@@ -45,7 +45,7 @@ public class ReadImage
 
             try 
             {
-                ImageIO.write(splitImages[i], "jpg", output);
+                ImageIO.write(splitImages[i], "jpg", new file("Splitimage-"+ (i+1) + ".jpg"));
             } catch (Exception e) {
                 e.printStackTrace();
             }
