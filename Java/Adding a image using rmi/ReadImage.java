@@ -34,10 +34,10 @@ public class ReadImage
          * Dividing original image
          */
 
-        Image[] splitImages = new Image[3];
+        BufferedImage[] splitImages = new Image[3];
 
-        int splitHeight = img.getHeight(observer)/3;
-        int splitWidth = img.getWidth(observer);
+        int splitHeight = img.getHeight()/3;
+        int splitWidth = img.getWidth();
 
         for(int i = 0;i < 3;i++)
         {
