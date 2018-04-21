@@ -16,7 +16,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
 
     public ImplementingImageProcessor() throws RemoteException
     {
-        
+        super();
     }
     
 }
