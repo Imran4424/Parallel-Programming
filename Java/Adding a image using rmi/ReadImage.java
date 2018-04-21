@@ -47,7 +47,7 @@ public class ReadImage
             {
                 
             } catch (Exception e) {
-                //TODO: handle exception
+                e.printStackTrace();
             }
         }
 
