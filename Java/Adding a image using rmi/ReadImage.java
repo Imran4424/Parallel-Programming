@@ -33,7 +33,7 @@ public class ReadImage
 
         JLabel lbl = new JLabel();
         lbl.setIcon(icon);
-        frame.add(lbl)
+        frame.add(lbl);
 
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
