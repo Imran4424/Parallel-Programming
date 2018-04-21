@@ -17,6 +17,6 @@ public class ReadImage
 
     public void DisplayImage() throws IOException
     {
-        Image img = ImageIO.read(new File("butterfly.jpg"));
+        Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
     }
 }
