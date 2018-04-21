@@ -39,10 +39,10 @@ public class ReadImage
         int splitHeight = img.getHeight()/3;
         int splitWidth = img.getWidth();
 
-        /* for(int i = 0;i < 3;i++)
+        for(int i = 0;i < 3;i++)
         {
             splitImages[i] = img.getSubimage(splitWidth, i*splitHeight, splitWidth, splitHeight);
-        } */
+        }
 
 
         JFrame frame = new JFrame();
