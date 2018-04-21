@@ -58,6 +58,8 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         Caption filter = new Caption(watermark,font,c,pos,insetPixels);
 
         BufferedImage watermark_image = filter.apply(img);
+
+        return watermark_image;
     }
 
     public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException {
