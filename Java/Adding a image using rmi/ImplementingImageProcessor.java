@@ -1,3 +1,4 @@
+import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -38,6 +39,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         //setting up the watermark properties
 
         String watermark = "First";
+        Font font = new font("Monospaced",Font.PLAIN,14);
     }
     
 }
