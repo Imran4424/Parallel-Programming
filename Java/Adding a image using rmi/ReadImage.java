@@ -26,5 +26,6 @@ public class ReadImage
 
         frame.setLayout(new FlowLayout());
         frame.setSize(400,300);
+        frame.setVisible(true);
     }
 }
