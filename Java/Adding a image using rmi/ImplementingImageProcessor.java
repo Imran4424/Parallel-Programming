@@ -51,9 +51,11 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         BufferedImage watermarkImage = ImageIO.read(this.getClass().getResource("imran.jpg"))
 
         //Applying watermark
-        
+        Watermark filter = new Watermark(Positions.CENTER, watermarkImage, 0.5f);
+
+        BufferedImage processImage = filter.apply(img);
        
-        return watermark_image;
+        return processImage;
     }
 
     public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException 
