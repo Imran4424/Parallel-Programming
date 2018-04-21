@@ -12,5 +12,8 @@ public class ReadImage
     }
     
 
-    public void 
+    public void DisplayImage()
+    {
+        
+    }
 }
