@@ -1,3 +1,5 @@
+package net.coobird.thumbnailator.filters;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -6,6 +8,8 @@ import java.rmi.server.UnicastRemoteObject;
 import java.text.ParsePosition;
 
 import javax.swing.text.Position;
+
+
 
 
 /**
@@ -50,7 +54,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
 
         //Applying watermark
 
-
+        
     }
     
 }
