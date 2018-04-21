@@ -67,6 +67,8 @@ public class ReadImage
 
         frame.add(lbl);
 
+        
+
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
