@@ -46,7 +46,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         Font font = new font("Monospaced",Font.PLAIN,14);
         Color c = Color.BLACK;
         Position pos = watermark;
-        int 
+        int insetPixels = 0;
     }
     
 }
