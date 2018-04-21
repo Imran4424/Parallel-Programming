@@ -24,7 +24,7 @@ public class ReadImage
     {
         Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
 
-        ImageIcon = new ImageIcon(img);
+        ImageIcon icon = new ImageIcon(img);
 
         JFrame frame = new JFrame();
 
@@ -32,7 +32,7 @@ public class ReadImage
         frame.setSize(400,300);
 
         JLabel lbl = new JLabel();
-        
+
 
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
