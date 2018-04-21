@@ -31,7 +31,8 @@ public class ReadImage
         frame.setLayout(new FlowLayout());
         frame.setSize(400,300);
 
-        JLabel lbl = new
+        JLabel lbl = new JLabel();
+        
 
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
