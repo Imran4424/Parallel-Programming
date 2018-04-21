@@ -67,7 +67,7 @@ public class ReadImage
 
         frame.add(lbl);
 
-        
+        frame.add(splitim1);
 
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
