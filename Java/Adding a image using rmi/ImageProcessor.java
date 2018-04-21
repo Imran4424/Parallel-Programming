@@ -13,6 +13,6 @@ public interface ImageProcessor extends Remote
      */
 
 
-    public Image setwaterMark(Image sourceFile) throws RemoteException;
+    public BufferedImage setwaterMark(Image sourceFile) throws RemoteException;
     
 }
