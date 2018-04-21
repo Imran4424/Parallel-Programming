@@ -31,5 +31,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         * for default constructors, the object values will be initialized with default values
         */
     }
+
+    
     
 }
