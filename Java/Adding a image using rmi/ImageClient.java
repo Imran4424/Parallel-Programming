@@ -47,6 +47,11 @@ public class ImageClient
 
             BufferedImage finalImage = combine_all(img,waterImg,waterImg2,waterImg3);
 
+
+            //disaplaying images
+
+            
+
         } catch (MalformedURLException malurl) {
             System.out.println();
             System.out.println("Malfromed URL Exception");
