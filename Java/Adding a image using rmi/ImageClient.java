@@ -48,17 +48,17 @@ public class ImageClient
 
             BufferedImage waterImg = obj.setWaterMarkOne(splitImages[0]);
 
-            BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
+            //BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
 
-            BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
+            //BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
 
-            //BufferedImage finalImage = combine_all(img, waterImg, waterImg2, waterImg3);
+            BufferedImage finalImage = combine_all(img, waterImg, splitImages[1], splitImages[2]);
 
             //disaplaying images
 
             JLabel origianlImg = new JLabel(new ImageIcon(img));
 
-            //JLabel processImg = new JLabel(new ImageIcon(finalImage));
+            JLabel processImg = new JLabel(new ImageIcon(finalImage));
 
             JFrame frame = new JFrame();
             frame.setSize(1200, 900);
@@ -66,7 +66,7 @@ public class ImageClient
             frame.setLayout(new FlowLayout());
 
             frame.add(origianlImg);
-            //frame.add(processImg);
+            frame.add(processImg);
 
             frame.setVisible(true);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
