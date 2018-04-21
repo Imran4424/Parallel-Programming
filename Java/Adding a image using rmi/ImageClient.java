@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.awt.FlowLayout;
 import java.awt.Graphics2D;
 import java.awt.image;
 import java.awt.image.BufferedImage;
@@ -9,6 +10,7 @@ import java.rmi.RemoteException;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 /**
@@ -49,12 +51,18 @@ public class ImageClient
 
             BufferedImage finalImage = combine_all(img,waterImg,waterImg2,waterImg3);
 
-            
+
             //disaplaying images
 
             JLabel origianlImg = new JLabel(new ImageIcon(img));
 
             JLabel processImg = new JLabel(new ImageIcon(finalImage));
+
+            JFrame frame = new JFrame();
+            frame.setSize(1200,900);
+
+            frame.setLayout(new FlowLayout());
+
 
         } catch (MalformedURLException malurl) {
             System.out.println();
