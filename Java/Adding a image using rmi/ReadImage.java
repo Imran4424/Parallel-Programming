@@ -26,6 +26,13 @@ public class ReadImage
 
         ImageIcon icon = new ImageIcon(img);
 
+
+        /**
+         * Dividing original image
+         */
+
+        
+
         JFrame frame = new JFrame();
 
         frame.setLayout(new FlowLayout());
