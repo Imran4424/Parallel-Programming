@@ -56,7 +56,8 @@ public class ReadImage
         JLabel lbl = new JLabel();
         lbl.setIcon(icon);
 
-        
+        JLabel splim1 = new JLabel()
+
         JFrame frame = new JFrame();
 
         frame.setLayout(new FlowLayout());
