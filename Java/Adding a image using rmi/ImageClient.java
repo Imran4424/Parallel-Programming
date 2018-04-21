@@ -68,6 +68,8 @@ public class ImageClient
     
     public BufferedImage combine_all(BufferedImage img,BufferedImage img2, BufferedImage img3)
     {
+        int currentheight = 0;
+
         
     }
 }
