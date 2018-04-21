@@ -28,18 +28,13 @@ public class ImageClient
             splitImages[i] = img.getSubimage(0, i * splitHeight, splitWidth, splitHeight);
         }
 
-        try {
+        try 
+        {
             String url = "rmi://localhost/CalculatorService";
 
             Calculator obj = (Calculator) Naming.lookup(url);
 
-            System.out.println("The addition of " + x + " and " + y + " is: " + obj.add(x, y));
-
-            System.out.println("The substraction of " + x + " and " + y + " is: " + obj.sub(x, y));
-
-            System.out.println("The multipication of " + x + " and " + y + " is: " + obj.mul(x, y));
-
-            System.out.println("The division of " + x + " and " + y + " is: " + obj.division(x, y));
+            
 
         } catch (MalformedURLException malurl) {
             System.out.println();
@@ -59,7 +54,7 @@ public class ImageClient
             System.out.println("Arithematic Exception");
             System.out.println(arexc);
         }
-        
+
     }
     
 
