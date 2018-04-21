@@ -48,9 +48,9 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         //setting up the watermark properties
 
         String watermark = "First";
-        Font font = new font("Monospaced",Font.PLAIN,14);
+        Font font = new Font("Monospaced",Font.PLAIN,14);
         Color c = Color.BLACK;
-        Position pos = Positions.CENTER;
+        Positions pos = Positions.CENTER;
         int insetPixels = 0;
 
         //Applying watermark
@@ -66,9 +66,9 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         //setting up the watermark properties
 
         String watermark = "Second";
-        Font font = new font("Monospaced", Font.PLAIN, 14);
+        Font font = new Font("Monospaced", Font.PLAIN, 14);
         Color c = Color.BLACK;
-        Position pos = Positions.CENTER;
+        Positions pos = Positions.CENTER;
         int insetPixels = 0;
 
         //Applying watermark
@@ -84,7 +84,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         //setting up the watermark properties
 
         String watermark = "Third";
-        Font font = new font("Monospaced", Font.PLAIN, 14);
+        Font font = new Font("Monospaced", Font.PLAIN, 14);
         Color c = Color.BLACK;
         Positions pos = Positions.CENTER;
         int insetPixels = 0;
