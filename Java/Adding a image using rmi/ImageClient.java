@@ -1,6 +1,10 @@
 import java.io.IOException;
 import java.awt.Image.BufferedImage;
 import java.awt.image;
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 
 import javax.imageio.ImageIO;
 
@@ -30,9 +34,9 @@ public class ImageClient
 
         try 
         {
-            String url = "rmi://localhost/CalculatorService";
+            String url = "rmi://localhost/ImageService";
 
-            Calculator obj = (Calculator) Naming.lookup(url);
+            ImageProcessor obj = (ImageProcessor) Naming.lookup(url);
 
             
 
