@@ -8,6 +8,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.text.ParsePosition;
 
+import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.text.Position;
 
@@ -44,16 +45,18 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         */
     }
 
-    public BufferedImage setWaterMarkOne(BufferedImage img) throws RemoteException
+    public BufferedImage setWaterMarkOne(BufferedImage img) throws IOException , RemoteException 
     {
         //setting up the watermark properties
 
-        BufferedImage watermarkImage = ImageIO.read(this.getClass().getResource("imran.jpg"))
+        BufferedImage watermarkImage = ImageIO.read(this.getClass().getResource("imran.jpg"));
 
-        //Applying watermark
-        Watermark filter = new Watermark(Positions.CENTER, watermarkImage, 0.5f);
+        int w = Math.max(img.getWidth(), watermarkImage.getWidth());
+        int h = Math.max(img.getHeight(), watermarkImage.getHeight());
 
-        BufferedImage processImage = filter.apply(img);
+        BufferedImage combined = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+
+        
        
         return processImage;
     }

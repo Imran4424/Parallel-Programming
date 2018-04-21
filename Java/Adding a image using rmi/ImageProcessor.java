@@ -1,5 +1,6 @@
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
@@ -14,7 +15,7 @@ public interface ImageProcessor extends Remote
      */
 
 
-    public BufferedImage setWaterMarkOne(BufferedImage img) throws RemoteException;
+    public BufferedImage setWaterMarkOne(BufferedImage img) throws IOException,RemoteException;
 
     public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException;
 
