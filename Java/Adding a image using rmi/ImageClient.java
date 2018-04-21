@@ -63,6 +63,11 @@ public class ImageClient
 
             frame.setLayout(new FlowLayout());
 
+            frame.add(origianlImg);
+            frame.add(processImg);
+
+            frame.setVisible(true);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         } catch (MalformedURLException malurl) {
             System.out.println();
