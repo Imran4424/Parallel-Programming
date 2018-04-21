@@ -19,6 +19,8 @@ public class ImageServer
 
         } catch (Exception e) {
             //TODO: handle exception
+
+            System.out.println("Trouble " + e);
         }
     }
     
