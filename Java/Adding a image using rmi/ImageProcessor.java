@@ -14,10 +14,10 @@ public interface ImageProcessor extends Remote
      */
 
 
-    public BufferedImage setwaterMarkOne(BufferedImage img) throws RemoteException;
+    public BufferedImage setWaterMarkOne(BufferedImage img) throws RemoteException;
 
-    public BufferedImage setwaterMarkTwo(BufferedImage img) throws RemoteException;
+    public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException;
 
-    public BufferedImage setwaterMarkThree(BufferedImage img) throws RemoteException;
+    public BufferedImage setWaterMarkThree(BufferedImage img) throws RemoteException;
     
 }
