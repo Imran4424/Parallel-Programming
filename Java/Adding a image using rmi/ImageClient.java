@@ -8,6 +8,8 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  * ImageClient
@@ -47,10 +49,12 @@ public class ImageClient
 
             BufferedImage finalImage = combine_all(img,waterImg,waterImg2,waterImg3);
 
-
+            
             //disaplaying images
 
-            
+            JLabel origianlImg = new JLabel(new ImageIcon(img));
+
+            JLabel processImg = new JLabel(new ImageIcon(finalImage));
 
         } catch (MalformedURLException malurl) {
             System.out.println();
