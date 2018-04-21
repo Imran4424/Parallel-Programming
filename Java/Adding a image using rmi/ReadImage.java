@@ -12,8 +12,8 @@ public class ReadImage
     }
     
 
-    public void DisplayImage()
+    public void DisplayImage() throws
     {
-        
+
     }
 }
