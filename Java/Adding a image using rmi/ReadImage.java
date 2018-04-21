@@ -23,7 +23,7 @@ public class ReadImage
     {
         Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
 
-        ImageIcon = new ImageIcon();
+        ImageIcon = new ImageIcon(img);
 
         JFrame frame = new JFrame();
 
