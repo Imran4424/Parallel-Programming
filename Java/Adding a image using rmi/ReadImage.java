@@ -1,6 +1,7 @@
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Image;
+import java.awt.Image.*;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -32,6 +33,11 @@ public class ReadImage
          */
 
         Image[] splitImages = new Image[3];
+
+        int splitHeight = img.getHeight(img)/3;
+
+
+
 
         JFrame frame = new JFrame();
 
