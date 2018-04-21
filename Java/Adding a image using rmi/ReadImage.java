@@ -3,6 +3,7 @@ import java.awt.Image;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.JFrame;
 
 /**
  * ReadImage
@@ -20,8 +21,6 @@ public class ReadImage
     {
         Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
 
-        Frame frame = new Frame();
-
-        frame.setVisible(true);
+        JFrame 
     }
 }
