@@ -44,7 +44,7 @@ public class ImageClient
 
             BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
             
-            
+
         } catch (MalformedURLException malurl) {
             System.out.println();
             System.out.println("Malfromed URL Exception");
@@ -66,5 +66,8 @@ public class ImageClient
 
     }
     
-
+    public BufferedImage combine_all(BufferedImage img,BufferedImage img2, BufferedImage img3)
+    {
+        
+    }
 }
