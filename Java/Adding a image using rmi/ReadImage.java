@@ -41,7 +41,7 @@ public class ReadImage
 
         for(int i = 0;i < 3;i++)
         {
-            splitImages[i] = img.getSubimage(splitWidth, splitHeight, splitWidth, splitHeight);
+            splitImages[i] = img.getSubimage(0, 0, 0, 0);
 
 /*             try 
             {
