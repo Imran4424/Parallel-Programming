@@ -1,4 +1,5 @@
-package net.coobird.thumbnailator.filters;
+import net.coobird.thumbnailator.filters.*;
+import net.coobird.thumbnailator.geometry.*;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -49,12 +50,14 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         String watermark = "First";
         Font font = new font("Monospaced",Font.PLAIN,14);
         Color c = Color.BLACK;
-        Position pos;
+        Position pos = Positions.CENTER;
         int insetPixels = 0;
 
         //Applying watermark
 
-        
+        Caption filter = new Caption(watermark,font,c,pos,insetPixels);
+
+        BufferedImage watermark_image = filter.apply(img);
     }
     
 }
