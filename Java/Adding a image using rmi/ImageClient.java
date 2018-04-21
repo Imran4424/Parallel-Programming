@@ -1,6 +1,6 @@
 import java.io.IOException;
-import java.awt.Image.BufferedImage;
 import java.awt.image;
+import java.awt.image.BufferedImage;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -38,7 +38,7 @@ public class ImageClient
 
             ImageProcessor obj = (ImageProcessor) Naming.lookup(url);
 
-            
+            BufferedImage waterImg = obj.setWaterMarkOne(splitImages[0]);
 
         } catch (MalformedURLException malurl) {
             System.out.println();
