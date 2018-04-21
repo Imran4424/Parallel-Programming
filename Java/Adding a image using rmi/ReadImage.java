@@ -43,12 +43,13 @@ public class ReadImage
         {
             splitImages[i] = img.getSubimage(splitWidth, i*splitHeight, splitWidth, splitHeight);
 
-            try 
+/*             try 
             {
                 ImageIO.write(splitImages[i], "jpg", new file("Splitimage-"+ (i+1) + ".jpg"));
             } catch (Exception e) {
                 e.printStackTrace();
             }
+ */
         }
 
 
