@@ -20,13 +20,75 @@ public class ImageClient
 {
     public static void main(String[] args) throws IOException
     {
-        
+        new ImageClient().Image_operations();
 
     }
 
     public void Image_operations() throws IOException
     {
-        
+        BufferedImage img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
+
+        /**
+        * Dividing original image
+        */
+
+        BufferedImage[] splitImages = new BufferedImage[3];
+
+        int splitHeight = img.getHeight() / 3;
+        int splitWidth = img.getWidth();
+
+        for (int i = 0; i < 3; i++) {
+            splitImages[i] = img.getSubimage(0, i * splitHeight, splitWidth, splitHeight);
+        }
+
+        try {
+            String url = "rmi://localhost/ImageService";
+
+            ImageProcessor obj = (ImageProcessor) Naming.lookup(url);
+
+            BufferedImage waterImg = obj.setWaterMarkOne(splitImages[0]);
+
+            BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
+
+            BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
+
+            BufferedImage finalImage = combine_all(img, waterImg, waterImg2, waterImg3);
+
+            //disaplaying images
+
+            JLabel origianlImg = new JLabel(new ImageIcon(img));
+
+            JLabel processImg = new JLabel(new ImageIcon(finalImage));
+
+            JFrame frame = new JFrame();
+            frame.setSize(1200, 900);
+
+            frame.setLayout(new FlowLayout());
+
+            frame.add(origianlImg);
+            frame.add(processImg);
+
+            frame.setVisible(true);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        } catch (MalformedURLException malurl) {
+            System.out.println();
+            System.out.println("Malfromed URL Exception");
+            System.out.println(malurl);
+
+        } catch (RemoteException re) {
+            System.out.println();
+            System.out.println("Remote Exception");
+            System.out.println(re);
+        } catch (NotBoundException notbe) {
+            System.out.println();
+            System.out.println("Not Bound Exception");
+            System.out.println(notbe);
+        } catch (ArithmeticException arexc) {
+            System.out.println();
+            System.out.println("Arithematic Exception");
+            System.out.println(arexc);
+        }
     }
     
     public BufferedImage combine_all(BufferedImage img,BufferedImage waImg,BufferedImage waImg2, BufferedImage waImg3)
