@@ -1,3 +1,4 @@
+import java.awt.image.BufferedImage;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
@@ -32,6 +33,11 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         */
     }
 
-    
+    public BufferedImage setWaterMarkOne(BufferedImage img) throws RemoteException
+    {
+        //setting up the watermark properties
+
+        String watermark = "First";
+    }
     
 }
