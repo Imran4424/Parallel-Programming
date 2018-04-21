@@ -1,3 +1,4 @@
+import java.awt.Image;
 import java.io.IOException;
 
 /**
@@ -14,6 +15,6 @@ public class ReadImage
 
     public void DisplayImage() throws IOException
     {
-
+        Image img =
     }
 }
