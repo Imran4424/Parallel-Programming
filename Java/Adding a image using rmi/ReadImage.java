@@ -6,6 +6,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 /**
  * ReadImage
@@ -29,6 +30,9 @@ public class ReadImage
 
         frame.setLayout(new FlowLayout());
         frame.setSize(400,300);
+
+        JLabel lbl = new
+
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
