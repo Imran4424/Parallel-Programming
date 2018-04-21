@@ -62,7 +62,8 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         return watermark_image;
     }
 
-    public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException {
+    public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException 
+    {
         //setting up the watermark properties
 
         String watermark = "Second";
@@ -80,7 +81,8 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         return watermark_image;
     }
     
-    public BufferedImage setWaterMarkThree(BufferedImage img) throws RemoteException {
+    public BufferedImage setWaterMarkThree(BufferedImage img) throws RemoteException 
+    {
         //setting up the watermark properties
 
         String watermark = "Third";
