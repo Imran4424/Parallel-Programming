@@ -1,3 +1,4 @@
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Image;
 import java.io.IOException;
@@ -22,5 +23,7 @@ public class ReadImage
         Image img = ImageIO.read(this.getClass().getResource("butterfly.jpg"));
 
         JFrame frame = new JFrame();
+
+        frame.setLayout(new FlowLayout());
     }
 }
