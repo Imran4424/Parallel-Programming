@@ -57,7 +57,7 @@ public class ReadImage
         lbl.setIcon(icon);
 
         JLabel splim1 = new JLabel(new ImageIcon(splitImages[0]));
-        JLabel splim1 = new JLabel(new ImageIcon(splitImages[0]));
+        JLabel splim2 = new JLabel(new ImageIcon(splitImages[0]));
         JLabel splim1 = new JLabel(new ImageIcon(splitImages[0]));
 
         JFrame frame = new JFrame();
