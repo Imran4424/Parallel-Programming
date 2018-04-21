@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.awt.Graphics2D;
 import java.awt.image;
 import java.awt.image.BufferedImage;
 import java.net.MalformedURLException;
@@ -66,10 +67,17 @@ public class ImageClient
 
     }
     
-    public BufferedImage combine_all(BufferedImage img,BufferedImage img2, BufferedImage img3)
+    public BufferedImage combine_all(BufferedImage waImg,BufferedImage waImg2, BufferedImage waImg3)
     {
         int currentheight = 0;
 
-        
+        BufferedImage combined_Image = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
+
+        Graphics2D g2d = combined_Image.createGraphics();
+
+        for(int i=0;i<3;i++)
+        {
+            
+        }
     }
 }
