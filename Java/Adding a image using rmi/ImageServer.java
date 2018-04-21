@@ -23,5 +23,10 @@ public class ImageServer
             System.out.println("Trouble " + e);
         }
     }
+
+    public static void main(String[] args) 
+    {
+        
+    }
     
 }
