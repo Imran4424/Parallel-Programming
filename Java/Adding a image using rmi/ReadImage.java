@@ -31,7 +31,7 @@ public class ReadImage
          * Dividing original image
          */
 
-        
+        Image[] splitImages = new Image[3];
 
         JFrame frame = new JFrame();
 
