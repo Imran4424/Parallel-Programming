@@ -25,5 +25,6 @@ public class ReadImage
         JFrame frame = new JFrame();
 
         frame.setLayout(new FlowLayout());
+        frame.setSize(400,300);
     }
 }
