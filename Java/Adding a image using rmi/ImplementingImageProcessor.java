@@ -12,6 +12,7 @@ import java.text.ParsePosition;
 
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.text.Position;
 import java.io.NotSerializableException;
 import java.io.Serializable;
@@ -49,8 +50,17 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         */
     }
 
-    public Image setWaterMarkOne(Image img) throws RemoteException
+    public ImageIcon setWaterMarkOne(ImageIcon img) throws RemoteException , IOException
     {
+        BufferedImage origalImage = new BufferedImage(img.getIconWidth(), img.getIconHeight(), BufferedImage.TYPE_INT_RGB);
+        Graphics g = origalImage.createGraphics();
+        // paint the Icon to the BufferedImage.
+        img.paintIcon(null, g, 0, 0);
+        g.dispose();
+
+        BufferedImage watermark = ImageIO.read(this.getClass().getResource("imran.jpg"));
+
+
         return img;
     }
 

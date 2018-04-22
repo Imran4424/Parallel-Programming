@@ -48,7 +48,7 @@ public class ImageClient
 
             System.out.println(obj.sum(4,3));
 
-            BufferedImage waterImg = (BufferedImage) obj.setWaterMarkOne((Image)splitImages[0]);
+            ImageIcon waterImg =  obj.setWaterMarkOne(new ImageIcon(splitImages[0]));
 
             //BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
 
