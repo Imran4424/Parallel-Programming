@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.awt.FlowLayout;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.net.MalformedURLException;
@@ -50,11 +51,17 @@ public class ImageClient
 
             ImageIcon waterImg =  obj.setWaterMarkOne(new ImageIcon(splitImages[0]));
 
+            BufferedImage bfimg = new BufferedImage(waterImg.getIconWidth(), waterImg.getIconHeight(),BufferedImage.TYPE_INT_RGB);
+            Graphics g = bfimg.createGraphics();
+            // paint the Icon to the BufferedImage.
+            waterImg.paintIcon(null, g, 0, 0);
+            g.dispose();
+
             //BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
 
             //BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
 
-            BufferedImage finalImage = combine_all(img, splitImages[0], splitImages[1], splitImages[2]);
+            BufferedImage finalImage = combine_all(img, bfimg, splitImages[1], splitImages[2]);
 
             //disaplaying images
 

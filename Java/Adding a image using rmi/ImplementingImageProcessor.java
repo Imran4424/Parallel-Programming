@@ -52,16 +52,19 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
 
     public ImageIcon setWaterMarkOne(ImageIcon img) throws RemoteException , IOException
     {
-        BufferedImage origalImage = new BufferedImage(img.getIconWidth(), img.getIconHeight(), BufferedImage.TYPE_INT_RGB);
-        Graphics g = origalImage.createGraphics();
+        BufferedImage originalImage = new BufferedImage(img.getIconWidth(), img.getIconHeight(), BufferedImage.TYPE_INT_RGB);
+        Graphics g = originalImage.createGraphics();
         // paint the Icon to the BufferedImage.
         img.paintIcon(null, g, 0, 0);
         g.dispose();
 
         BufferedImage watermark = ImageIO.read(this.getClass().getResource("imran.jpg"));
 
+        Watermark filter = new Watermark(Positions.CENTER, watermark, 0.5f);
+        BufferedImage watermarkedImage = filter.apply(originalImage);
 
-        return img;
+
+        return (new ImageIcon(watermarkedImage));
     }
 
     public int sum(int x,int y) throws RemoteException
