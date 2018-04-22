@@ -72,7 +72,7 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         return x+y;
     }
 
-    public ImageIcon setWaterMarkOne(ImageIcon img) throws RemoteException, IOException {
+    public ImageIcon setWaterMarkTwo(ImageIcon img) throws RemoteException, IOException {
         BufferedImage originalImage = new BufferedImage(img.getIconWidth(), img.getIconHeight(),BufferedImage.TYPE_INT_RGB);
         Graphics g = originalImage.createGraphics();
         // paint the Icon to the BufferedImage.

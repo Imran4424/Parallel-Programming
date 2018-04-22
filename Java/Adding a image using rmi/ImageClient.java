@@ -49,6 +49,8 @@ public class ImageClient
 
             System.out.println(obj.sum(4,3));
 
+            //working with part One
+
             ImageIcon waterImg =  obj.setWaterMarkOne(new ImageIcon(splitImages[0]));
 
             BufferedImage bfimg = new BufferedImage(waterImg.getIconWidth(), waterImg.getIconHeight(),BufferedImage.TYPE_INT_RGB);
@@ -57,11 +59,29 @@ public class ImageClient
             waterImg.paintIcon(null, g, 0, 0);
             g.dispose();
 
-            //BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
+            //working with part two
 
-            //BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
+            ImageIcon waterImgTwo = obj.setWaterMarkTwo(new ImageIcon(splitImages[1]));
 
-            BufferedImage finalImage = combine_all(img, bfimg, splitImages[1], splitImages[2]);
+            BufferedImage bfimgTwo = new BufferedImage(waterImgTwo.getIconWidth(), waterImgTwo.getIconHeight(),BufferedImage.TYPE_INT_RGB);
+            Graphics g_2 = bfimgTwo.createGraphics();
+            // paint the Icon to the BufferedImage.
+            waterImgTwo.paintIcon(null, g_2, 0, 0);
+            g_2.dispose();
+
+            //working with part three
+
+            ImageIcon waterImgThree = obj.setWaterMarkThree(new ImageIcon(splitImages[2]));
+
+            BufferedImage bfimgThree = new BufferedImage(waterImgThree.getIconWidth(), waterImgThree.getIconHeight(),BufferedImage.TYPE_INT_RGB);
+            Graphics g_3 = bfimgThree.createGraphics();
+            // paint the Icon to the BufferedImage.
+            waterImgThree.paintIcon(null, g_3, 0, 0);
+            g_3.dispose();
+
+            BufferedImage finalImage = combine_all(img, bfimg, bfimgTwo, bfimgThree);
+
+            //Image processing finished here :)
 
             //disaplaying images
 
