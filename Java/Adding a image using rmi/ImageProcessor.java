@@ -23,8 +23,8 @@ public interface ImageProcessor extends Remote
 
     public int sum(int x,int y) throws RemoteException;
 
-    public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException;
+    public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException, IOException;
 
-    public BufferedImage setWaterMarkThree(BufferedImage img) throws RemoteException;
+    public BufferedImage setWaterMarkThree(BufferedImage img) throws RemoteException, IOException;
     
 }

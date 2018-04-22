@@ -72,41 +72,33 @@ public class ImplementingImageProcessor extends UnicastRemoteObject implements I
         return x+y;
     }
 
-    public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException 
-    {
-        //setting up the watermark properties
+    public ImageIcon setWaterMarkOne(ImageIcon img) throws RemoteException, IOException {
+        BufferedImage originalImage = new BufferedImage(img.getIconWidth(), img.getIconHeight(),BufferedImage.TYPE_INT_RGB);
+        Graphics g = originalImage.createGraphics();
+        // paint the Icon to the BufferedImage.
+        img.paintIcon(null, g, 0, 0);
+        g.dispose();
 
-        String watermark = "Second";
-        Font font = new Font("Monospaced", Font.PLAIN, 14);
-        Color c = Color.BLACK;
-        Positions pos = Positions.CENTER;
-        int insetPixels = 0;
+        BufferedImage watermark = ImageIO.read(this.getClass().getResource("imran.jpg"));
 
-        //Applying watermark
+        Watermark filter = new Watermark(Positions.CENTER, watermark, 0.5f);
+        BufferedImage watermarkedImage = filter.apply(originalImage);
 
-        Caption filter = new Caption(watermark, font, c, pos, insetPixels);
-
-        BufferedImage watermark_image = filter.apply(img);
-
-        return watermark_image;
+        return (new ImageIcon(watermarkedImage));
     }
     
-    public BufferedImage setWaterMarkThree(BufferedImage img) throws RemoteException 
-    {
-        //setting up the watermark properties
+    public ImageIcon setWaterMarkThree(ImageIcon img) throws RemoteException, IOException {
+        BufferedImage originalImage = new BufferedImage(img.getIconWidth(), img.getIconHeight(),BufferedImage.TYPE_INT_RGB);
+        Graphics g = originalImage.createGraphics();
+        // paint the Icon to the BufferedImage.
+        img.paintIcon(null, g, 0, 0);
+        g.dispose();
 
-        String watermark = "Third";
-        Font font = new Font("Monospaced", Font.PLAIN, 14);
-        Color c = Color.BLACK;
-        Positions pos = Positions.CENTER;
-        int insetPixels = 0;
+        BufferedImage watermark = ImageIO.read(this.getClass().getResource("imran.jpg"));
 
-        //Applying watermark
+        Watermark filter = new Watermark(Positions.CENTER, watermark, 0.5f);
+        BufferedImage watermarkedImage = filter.apply(originalImage);
 
-        Caption filter = new Caption(watermark, font, c, pos, insetPixels);
-
-        BufferedImage watermark_image = filter.apply(img);
-
-        return watermark_image;
+        return (new ImageIcon(watermarkedImage));
     }
 }
