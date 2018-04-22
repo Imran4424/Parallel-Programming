@@ -46,13 +46,15 @@ public class ImageClient
 
             ImageProcessor obj = (ImageProcessor) Naming.lookup(url);
 
-            BufferedImage waterImg = obj.setWaterMarkOne(splitImages[0]);
+            System.out.println(obj.sum(4,3));
+
+            BufferedImage waterImg = (BufferedImage) obj.setWaterMarkOne((Image)splitImages[0]);
 
             //BufferedImage waterImg2 = obj.setWaterMarkOne(splitImages[1]);
 
             //BufferedImage waterImg3 = obj.setWaterMarkOne(splitImages[2]);
 
-            BufferedImage finalImage = combine_all(img, waterImg, splitImages[1], splitImages[2]);
+            BufferedImage finalImage = combine_all(img, splitImages[0], splitImages[1], splitImages[2]);
 
             //disaplaying images
 

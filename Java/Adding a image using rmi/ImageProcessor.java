@@ -3,6 +3,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.io.Serializable;
 
  /**
  * ImageProcessor
@@ -15,7 +16,9 @@ public interface ImageProcessor extends Remote
      */
 
 
-    public BufferedImage setWaterMarkOne(BufferedImage img) throws IOException,RemoteException;
+    public Image setWaterMarkOne(Image img) throws RemoteException;
+
+    public int sum(int x,int y) throws RemoteException;
 
     public BufferedImage setWaterMarkTwo(BufferedImage img) throws RemoteException;
 
