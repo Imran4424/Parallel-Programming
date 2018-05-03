@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 
 	#pragma omp parallel
 	{
-		id = omp_get_thread_num();
+		int id = omp_get_thread_num();
 
 		printf("I am a Progammer(%d)\n", id);
 	}
