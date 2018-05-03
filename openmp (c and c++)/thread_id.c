@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 		printf("I(%d) ", id);
 		printf("am(%d) ", id);
 		printf("a(%d) ", id);
-		printf("Programmer(%d) ", id);
+		printf("Programmer(%d)\n", id);
 	}
 
 	return 0;
