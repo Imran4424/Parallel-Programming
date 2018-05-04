@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 	{
 		int ID = omp_get_thread_num();
 
-		
+		pooh(id,a)
 	}
 
 	return 0;
