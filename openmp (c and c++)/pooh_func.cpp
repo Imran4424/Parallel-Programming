@@ -8,7 +8,9 @@ int main(int argc, char const *argv[])
 
 	#pragma omp parallel num_threads(5)
 	{
-		int ID = 
+		int ID = omp_get_thread_num();
+
+		
 	}
 
 	return 0;
