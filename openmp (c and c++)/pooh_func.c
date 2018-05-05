@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <omp.h>
 
+void pooh(int id,double ar[])
+{
+	
+}
+
 
 int main(int argc, char const *argv[])
 {
