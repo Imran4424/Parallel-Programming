@@ -24,5 +24,8 @@ public class AdditionServer
             System.out.println("Trouble " + e);
         }
     }
-    
+
+    public static void main(String[] args) {
+        
+    }
 }
