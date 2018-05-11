@@ -15,7 +15,7 @@ public class AdditionServer
 
             String url = "rmi://localhost:1099/AdditionService";
 
-            
+            Naming.rebind(url, obj);
         } 
         catch (Exception e) 
         {
