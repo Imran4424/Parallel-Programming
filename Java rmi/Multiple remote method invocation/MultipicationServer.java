@@ -21,7 +21,7 @@ import java.rmi.Naming;
         {
             //TODO: handle exception
 
-            System.out.println("");
+            System.out.println("Trouble " + e);
         }
     }
     
