@@ -11,7 +11,7 @@ public class SubstractionServer
     {
         try 
         {
-            
+            Calcutalor obj    
         } 
         catch (Exception e) 
         {
