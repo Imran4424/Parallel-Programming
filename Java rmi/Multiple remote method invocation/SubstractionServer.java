@@ -19,7 +19,7 @@ public class SubstractionServer
         {
             //TODO: handle exception
 
-            System
+            System.out.println();
         }
     }
     
