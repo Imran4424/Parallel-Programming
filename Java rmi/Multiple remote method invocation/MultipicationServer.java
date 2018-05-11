@@ -10,7 +10,8 @@
     public MultipicationServer()
     {
         Calcutalor obj = new Multipication();
-        
+
+        String url
     }
     
 }
