@@ -11,7 +11,7 @@
     {
         Calcutalor obj = new Multipication();
 
-        String url = "rmi://localhost:1099/AdditionService";
+        String url = "rmi://localhost:1099/Service";
     }
     
 }
