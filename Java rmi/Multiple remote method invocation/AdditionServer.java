@@ -12,6 +12,8 @@ public class AdditionServer
         try 
         {
             Calcutalor obj = new Addition();
+
+            String url
         } 
         catch (Exception e) 
         {
