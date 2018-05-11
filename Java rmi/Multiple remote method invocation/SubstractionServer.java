@@ -24,7 +24,7 @@ public class SubstractionServer
     }
 
     public static void main(String[] args) {
-        new SubstractionServer()
+        new SubstractionServer();
     }
     
 }
