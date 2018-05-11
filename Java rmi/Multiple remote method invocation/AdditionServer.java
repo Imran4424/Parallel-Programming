@@ -13,7 +13,9 @@ public class AdditionServer
         {
             Calcutalor obj = new Addition();
 
-            String url = "rmi://localhost:1099";
+            String url = "rmi://localhost:1099/AdditionService";
+
+            
         } 
         catch (Exception e) 
         {
