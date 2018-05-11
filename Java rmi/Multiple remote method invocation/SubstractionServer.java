@@ -13,7 +13,7 @@ public class SubstractionServer
         {
             Calcutalor obj = new Substraction();
             
-            
+            String
         } 
         catch (Exception e) 
         {
