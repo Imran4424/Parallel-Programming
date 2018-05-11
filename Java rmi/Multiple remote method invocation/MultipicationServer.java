@@ -9,7 +9,7 @@
 {
     public MultipicationServer()
     {
-        
+        Calcutalor obj = new
     }
     
 }
