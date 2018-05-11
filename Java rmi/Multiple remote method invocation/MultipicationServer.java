@@ -27,7 +27,7 @@ import java.rmi.Naming;
 
     public static void main(String[] args) 
     {
-        
+        new MultipicationServer();    
     }
     
 }
