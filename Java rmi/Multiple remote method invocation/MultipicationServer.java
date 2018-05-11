@@ -7,6 +7,9 @@
  */
  public class MultipicationServer 
 {
-    
+    public MultipicationServer()
+    {
+        
+    }
     
 }
