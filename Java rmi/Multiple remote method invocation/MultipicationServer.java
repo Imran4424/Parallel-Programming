@@ -5,7 +5,8 @@
 /**
  * MultipicationServer
  */
-public class MultipicationServer {
+public class MultipicationServer 
+{
 
     
 }
