@@ -13,7 +13,7 @@ public class AdditionServer
         {
             Calcutalor obj = new Addition();
 
-            String url
+            String url = "";
         } 
         catch (Exception e) 
         {
