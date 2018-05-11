@@ -15,7 +15,7 @@ public class SubstractionServer
             
             String url = "rmi://localhost:1099/SubstractionService";
 
-            
+            name 
         } 
         catch (Exception e) 
         {
