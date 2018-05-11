@@ -11,7 +11,7 @@ public class AdditionServer
     {
         try 
         {
-            Calcutalor obj = 
+            Calcutalor obj = new Addition();
         } 
         catch (Exception e) 
         {
