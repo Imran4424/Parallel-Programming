@@ -17,7 +17,8 @@ import java.rmi.Naming;
         {
             
         } 
-        catch (Exception e) {
+        catch (Exception e) 
+        {
             //TODO: handle exception
         }
     }
