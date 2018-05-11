@@ -13,7 +13,7 @@ public class SubstractionServer
             
             String url = "rmi://localhost:1099/SubstractionService";
 
-            Naming.rebind(name, obj); 
+            Naming.rebind(url, obj); 
         } 
         catch (Exception e) 
         {
