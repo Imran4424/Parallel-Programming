@@ -13,7 +13,7 @@ public class SubstractionServer
         {
             Calcutalor obj = new Substraction();
             
-            String url = 
+            String url = ""
         } 
         catch (Exception e) 
         {
