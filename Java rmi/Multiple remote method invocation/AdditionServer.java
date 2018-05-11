@@ -21,7 +21,7 @@ public class AdditionServer
         {
             //TODO: handle exception
 
-            System
+            System.out.println("Trouble " + e);
         }
     }
     
