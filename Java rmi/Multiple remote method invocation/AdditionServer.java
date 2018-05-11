@@ -9,7 +9,11 @@ public class AdditionServer
 {
     public CalculatorServer()
     {
-        
+        try {
+            
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
     }
     
 }
