@@ -13,9 +13,11 @@ import java.rmi.Naming;
 
         Naming.rebind(url, obj);
 
-        try {
+        try 
+        {
             
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             //TODO: handle exception
         }
     }
