@@ -9,7 +9,8 @@
 {
     public MultipicationServer()
     {
-        Calcutalor obj = new
+        Calcutalor obj = new Multipication();
+        
     }
     
 }
