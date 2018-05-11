@@ -22,5 +22,9 @@ public class SubstractionServer
             System.out.println("Trouble " + e);
         }
     }
+
+    public static void main(String[] args) {
+        
+    }
     
 }
