@@ -26,6 +26,6 @@ public class AdditionServer
     }
 
     public static void main(String[] args) {
-        
+        new AdditionServer();
     }
 }
