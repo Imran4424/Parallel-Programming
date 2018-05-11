@@ -1,6 +1,4 @@
-
-
-
+import java.rmi.Naming;
 
 /**
  * SubstractionServer
@@ -15,7 +13,7 @@ public class SubstractionServer
             
             String url = "rmi://localhost:1099/SubstractionService";
 
-            name 
+            Naming 
         } 
         catch (Exception e) 
         {
