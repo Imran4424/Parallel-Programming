@@ -12,7 +12,9 @@ public class SubstractionServer
         try 
         {
             
-        } catch (Exception e) {
+        } 
+        catch (Exception e) 
+        {
             //TODO: handle exception
         }
     }
