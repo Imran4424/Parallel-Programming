@@ -12,6 +12,12 @@ import java.rmi.Naming;
         String url = "rmi://localhost:1099/MultipicationService";
 
         Naming.rebind(url, obj);
+
+        try {
+            
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
     }
     
 }
