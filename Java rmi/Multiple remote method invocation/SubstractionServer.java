@@ -13,7 +13,7 @@ public class SubstractionServer
         {
             Calcutalor obj = new Substraction();
             
-            String url = ""
+            String url = "rmi://localhost:1099/AdditionService";
         } 
         catch (Exception e) 
         {
