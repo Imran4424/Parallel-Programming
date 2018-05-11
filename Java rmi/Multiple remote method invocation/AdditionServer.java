@@ -7,6 +7,9 @@ import com.sun.org.apache.xml.internal.resolver.helpers.PublicId;
  */
 public class AdditionServer 
 {
-    public CalculatorServer
+    public CalculatorServer()
+    {
+        
+    }
     
 }
