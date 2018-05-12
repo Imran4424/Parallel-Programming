@@ -11,7 +11,7 @@ public class AdditionServer
     {
         try 
         {
-            Calcutalor obj = new Addition();
+            Calculator obj = new Addition();
 
             String url = "rmi://localhost:1099/AdditionService";
 
