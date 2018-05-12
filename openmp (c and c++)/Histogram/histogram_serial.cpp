@@ -25,5 +25,12 @@ int main(int argc, char const *argv[])
 	}
 
 
+
+	for (m = bins.begin(); m != bins.end(); ++m)
+	{
+		
+	}
+
+
 	return 0;
 }
