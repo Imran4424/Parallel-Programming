@@ -10,7 +10,7 @@ import java.rmi.Naming;
         
         try 
         {
-            Calcutalor obj = new Multipication();
+            Calculator obj = new Multipication();
     
             String url = "rmi://localhost:1099/MultipicationService";
     
