@@ -2,9 +2,9 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 /**
- * Calcutalor
+ * Calculator
  */
-public interface Calcutalor extends Remote
+public interface Calculator extends Remote
 {
     /**
      * Declaring method prototype

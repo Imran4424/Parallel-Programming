@@ -9,7 +9,7 @@ public class SubstractionServer
     {
         try 
         {
-            Calcutalor obj = new Substraction();
+            Calculator obj = new Substraction();
             
             String url = "rmi://localhost:1099/SubstractionService";
 
