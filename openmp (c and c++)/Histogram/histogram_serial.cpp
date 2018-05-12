@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
 		}
 	}
 
-	map<int,int> 
+	map<int,int>:: iterator m;
 
 	for (m = bins.begin(); m != bins.end(); ++m)
 	{
