@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <omp.h>
 #include <map>
+#include <pthread.h>
 using namespace std;
 
+
+pthread_mutex_t key;
 
 int main(int argc, char const *argv[])
 {
@@ -13,19 +16,19 @@ int main(int argc, char const *argv[])
 	int length = (int) sizeof(data)/ sizeof(data[0]);
 
 	#pragma omp parallel for
+	for (int i = 0; i < length; ++i)
 	{
-		for (int i = 0; i < length; ++i)
+		if(bins.count(int(data[i])) == 0)
 		{
-			if(bins.count(int(data[i])) == 0)
-			{
-				bins[data[i]] = 1;
-			}
-			else
-			{
-				bins[data[i]]++;
-			}
-		}	
-	}
+			bins[data[i]] = 1;
+		}
+		else
+		{
+			bins[data[i]]++;
+		}
+	}	
+
+
 
 
 	map<int,int>:: iterator m;
