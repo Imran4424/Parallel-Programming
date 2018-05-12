@@ -10,7 +10,12 @@ int main(int argc, char const *argv[])
 
 	map<int,int> bins;
 
-	
+	int length = (int) sizeof(data)/ sizeof(data[0]);
+
+	for (int i = 0; i < length; ++i)
+	{
+		
+	}
 
 
 	return 0;
