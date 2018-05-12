@@ -11,7 +11,7 @@ public class DivisionServer
     {
         try 
         {
-            
+            Calculator obj = new Division();
             
         } 
         catch (Exception e) 
