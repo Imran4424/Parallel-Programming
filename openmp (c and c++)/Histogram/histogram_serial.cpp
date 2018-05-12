@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 		}
 		else
 		{
-			
+			bins[data[i]]++;
 		}
 	}
 
