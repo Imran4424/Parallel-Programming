@@ -18,6 +18,8 @@ int main(int argc, char const *argv[])
 	#pragma omp parallel for
 	for (int i = 0; i < length; ++i)
 	{
+		pthread_mutex_lock(&key);
+
 		if(bins.count(int(data[i])) == 0)
 		{
 			bins[data[i]] = 1;
