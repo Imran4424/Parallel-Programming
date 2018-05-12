@@ -28,6 +28,8 @@ int main(int argc, char const *argv[])
 		{
 			bins[data[i]]++;
 		}
+
+		pthread_mutex_unlock(&key);
 	}	
 
 
