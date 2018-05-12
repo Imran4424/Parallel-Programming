@@ -5,7 +5,8 @@
 /**
  * DivisionServer
  */
-public class DivisionServer {
+public class DivisionServer 
+{
 
     
 }
