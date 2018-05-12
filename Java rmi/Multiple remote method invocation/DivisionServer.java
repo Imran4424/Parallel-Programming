@@ -12,7 +12,8 @@ public class DivisionServer
         try 
         {
             
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             //TODO: handle exception
         }
     }
