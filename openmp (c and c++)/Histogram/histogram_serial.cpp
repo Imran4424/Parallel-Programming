@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
 
 	for (m = bins.begin(); m != bins.end(); ++m)
 	{
-		
+		printf("the size of bin %d is %d\n",m->first, m->second);
 	}
 
 
