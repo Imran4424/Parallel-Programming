@@ -17,7 +17,7 @@ public class DivisionServer
         {
             //TODO: handle exception
 
-            System.out
+            System.out.println();
         }
     }
     
