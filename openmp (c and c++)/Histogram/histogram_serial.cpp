@@ -14,7 +14,14 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < length; ++i)
 	{
-		
+		if(bins.count(int(data[i])) == 0)
+		{
+			bins[data[i]] = 1;
+		}
+		else
+		{
+			
+		}
 	}
 
 
