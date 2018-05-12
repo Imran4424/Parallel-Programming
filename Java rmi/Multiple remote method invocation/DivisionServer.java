@@ -7,6 +7,9 @@
  */
 public class DivisionServer 
 {
-    
+    public DivisionServer()
+    {
+        
+    }
     
 }
