@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
 	{
 		pthread_mutex_lock(&key);
 
-		//printf("Thread id %d\n", omp_get_thread_num());
+		printf("Thread id %d\n", omp_get_thread_num());
 
 		if(bins.count(int(data[i])) == 0)
 		{
