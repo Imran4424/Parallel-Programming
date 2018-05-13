@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
 
 	int length = (int) sizeof(data)/ sizeof(data[0]);
 
-	printf("%d\n", length);
+	//printf("%d\n", length);
 
 	#pragma omp parallel for num_threads(6)
 	for (int i = 0; i < length; ++i)
