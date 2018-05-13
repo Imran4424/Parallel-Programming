@@ -12,14 +12,14 @@ int main(int argc, char const *argv[])
 	int data[100];
 
 	#pragma omp for
-	for (int i = 0; i < 20; ++i)
+	for (int i = 0; i < 100; ++i)
 	 {
 	 	data[i] = rand() % 5; 
 	 } 
 
 	map<int,int> bins;
 
-	int length = 20;
+	int length = 100;
 
 	#pragma omp parallel for
 	for (int i = 0; i < length; ++i)
