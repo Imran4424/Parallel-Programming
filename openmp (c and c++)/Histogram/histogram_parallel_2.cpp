@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 	#pragma omp for
 	for (int i = 0; i < 20; ++i)
 	 {
-	 	data[i] = rand
+	 	data[i] = rand() % 5; 
 	 } 
 
 	map<int,int> bins;
