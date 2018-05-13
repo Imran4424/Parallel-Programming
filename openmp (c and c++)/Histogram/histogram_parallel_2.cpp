@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 
 	map<int,int> bins;
 
-	int length = 2
+	int length = 20;
 	#pragma omp parallel for
 	for (int i = 0; i < length; ++i)
 	{
