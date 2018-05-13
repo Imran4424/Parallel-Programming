@@ -9,7 +9,7 @@ pthread_mutex_t key;
 
 int main(int argc, char const *argv[])
 {
-	int data[20];
+	int data[100];
 
 	#pragma omp for
 	for (int i = 0; i < 20; ++i)
@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 	map<int,int> bins;
 
 	int length = 20;
-	
+
 	#pragma omp parallel for
 	for (int i = 0; i < length; ++i)
 	{
