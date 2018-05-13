@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 
 	printf("%d\n", length);
 
-	#pragma omp parallel for
+	#pragma omp parallel for 
 	for (int i = 0; i < length; ++i)
 	{
 		pthread_mutex_lock(&key);
