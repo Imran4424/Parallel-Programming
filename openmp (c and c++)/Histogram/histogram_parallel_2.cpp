@@ -9,7 +9,13 @@ pthread_mutex_t key;
 
 int main(int argc, char const *argv[])
 {
-	int data[20]; 
+	int data[20];
+
+	#pragma omp for
+	for (int i = 0; i < 20; ++i)
+	 {
+	 	data[i] = rand
+	 } 
 
 	map<int,int> bins;
 
