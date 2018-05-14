@@ -13,7 +13,7 @@ public class DivisionServer
         {
             Calculator obj = new Division();
 
-            String url = "rmi://localhost:1099";
+            String url = "rmi://localhost:1099/DivisionServer";
             
         } 
         catch (Exception e) 
