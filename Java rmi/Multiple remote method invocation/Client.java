@@ -22,7 +22,9 @@ public class Client
 
             Calculator add_obj = (Calculator) Naming.lookup(add_url);
 
-            String sub_url = "rmi://localhost/";
+            String sub_url = "rmi://localhost/SubstractionService";
+
+            
         }
     }
     
