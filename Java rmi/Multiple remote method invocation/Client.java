@@ -12,7 +12,14 @@ public class Client
         
         int y = Integer.parseInt(args[1]);
 
-        
+        try 
+        {
+            
+        } 
+        catch (Exception e) 
+        {
+               //TODO: handle exception
+        }
     }
     
 }
