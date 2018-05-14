@@ -1,5 +1,5 @@
-
-
+import java.rmi.Naming;
+import java.util.Calendar;
 
 /**
  * Client
@@ -19,6 +19,8 @@ public class Client
         catch (Exception e) 
         {
             String add_url = "rmi://localhost/AdditionService";
+
+            Calculator obj = (Calculator) Naming.lookup(add_url);
         }
     }
     
