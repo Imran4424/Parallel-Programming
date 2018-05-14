@@ -13,7 +13,7 @@ public class DivisionServer
         {
             Calculator obj = new Division();
 
-            String url
+            String url = "";
             
         } 
         catch (Exception e) 
