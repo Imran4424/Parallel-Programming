@@ -23,6 +23,8 @@ public class DivisionServer
         }
     }
 
-    
+    public static void main(String[] args) {
+        
+    }
     
 }
