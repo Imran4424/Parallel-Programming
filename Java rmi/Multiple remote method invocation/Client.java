@@ -18,7 +18,7 @@ public class Client
         } 
         catch (Exception e) 
         {
-            String add_url =
+            String add_url = "";
         }
     }
     
