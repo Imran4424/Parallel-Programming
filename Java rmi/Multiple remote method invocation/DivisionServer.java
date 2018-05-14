@@ -1,6 +1,4 @@
-
-
-
+import java.rmi.Naming;
 
 /**
  * DivisionServer
@@ -14,7 +12,8 @@ public class DivisionServer
             Calculator obj = new Division();
 
             String url = "rmi://localhost:1099/DivisionServer";
-            
+
+            Naming.rebind(url, obj);  
         } 
         catch (Exception e) 
         {
