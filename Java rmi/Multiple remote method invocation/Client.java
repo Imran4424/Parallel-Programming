@@ -18,7 +18,7 @@ public class Client
         } 
         catch (Exception e) 
         {
-               //TODO: handle exception
+            String add_url =
         }
     }
     
