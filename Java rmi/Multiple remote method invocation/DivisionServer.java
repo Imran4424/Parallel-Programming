@@ -12,6 +12,8 @@ public class DivisionServer
         try 
         {
             Calculator obj = new Division();
+
+            String url
             
         } 
         catch (Exception e) 
