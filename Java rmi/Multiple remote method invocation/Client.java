@@ -35,6 +35,7 @@ public class Client
             Calculator div_obj = (Calculator) Naming.lookup(div_url);
 
             System.out.println("The addition of " + x + " and " + y + " is: " + add_obj.sum(x, y));
+            System.out.println("The addition of " + x + " and " + y + " is: " + add_obj.sum(x, y));
         }
     }
     
