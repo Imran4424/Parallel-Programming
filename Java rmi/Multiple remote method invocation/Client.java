@@ -27,6 +27,8 @@ public class Client
             Calculator sub_obj = (Calculator) Naming.lookup(sub_url);
 
             String mul_url = "rmi://localhost/MultipicationService";
+
+            Calculator mul_obj = (Calculator) Naming.lookup(mul_url);
         }
     }
     
