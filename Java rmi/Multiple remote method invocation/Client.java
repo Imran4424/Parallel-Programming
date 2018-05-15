@@ -1,5 +1,6 @@
 import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.RemoteException;
 import java.util.Calendar;
 
 /**
@@ -46,9 +47,9 @@ public class Client
             System.out.println("Malformed URL Exception");
             System.out.println();
         }
-        catch()
+        catch(RemoteException re)
         {
-            
+            System.out.println();
         }
     }
     
