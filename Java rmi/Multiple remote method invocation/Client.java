@@ -46,6 +46,10 @@ public class Client
             System.out.println("Malformed URL Exception");
             System.out.println();
         }
+        catch()
+        {
+            
+        }
     }
     
 }
