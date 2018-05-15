@@ -26,7 +26,7 @@ public class Client
 
             Calculator sub_obj = (Calculator) Naming.lookup(sub_url);
 
-            String mul_url
+            String mul_url = "";
         }
     }
     
