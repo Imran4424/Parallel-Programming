@@ -11,7 +11,7 @@ public class DivisionServer
         {
             Calculator obj = new Division();
 
-            String url = "rmi://localhost:1099/DivisionServer";
+            String url = "rmi://localhost:1099/DivisionService";
 
             Naming.rebind(url, obj);  
         } 
