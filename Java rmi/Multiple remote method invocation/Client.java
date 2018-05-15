@@ -38,7 +38,7 @@ public class Client
 
             System.out.println("The substraction of " + x + " and " + y + " is: " + sub_obj.sum(x, y));
             
-            System.out.println("The multipication of " + x + " and " + y + " is: " + add_obj.sum(x, y));
+            System.out.println("The multipication of " + x + " and " + y + " is: " + mul_obj.sum(x, y));
             
             System.out.println("The addition of " + x + " and " + y + " is: " + add_obj.sum(x, y));
         }
