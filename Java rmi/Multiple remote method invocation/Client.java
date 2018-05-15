@@ -1,3 +1,4 @@
+import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.util.Calendar;
 
@@ -39,9 +40,9 @@ public class Client
             System.out.println("The division of " + x + " and " + y + " is: " + div_obj.sum(x, y));
             
         } 
-        catch (Exception e) 
+        catch (MalformedURLException malurl) 
         {
-            
+
         }
     }
     
