@@ -1,5 +1,6 @@
 import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.Calendar;
 
@@ -52,6 +53,10 @@ public class Client
             System.out.println();
             System.out.println("Remote Exception");
             System.out.println();
+        }
+        catch(NotBoundException notbe)
+        {
+            
         }
     }
     
