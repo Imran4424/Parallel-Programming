@@ -60,6 +60,10 @@ public class Client
             System.out.println("Not Bound Exception");
             System.out.println();
         }
+        catch(ArithmeticException arie)
+        {
+            
+        }
     }
     
 }
