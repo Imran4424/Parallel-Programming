@@ -50,7 +50,7 @@ public class Client
         catch(RemoteException re)
         {
             System.out.println();
-            System.out.println();
+            System.out.println("Remote Exception");
             System.out.println();
         }
     }
