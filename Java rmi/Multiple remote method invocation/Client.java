@@ -33,6 +33,8 @@ public class Client
             String div_url = "rmi://localhost/DivisionService";
 
             Calculator div_obj = (Calculator) Naming.lookup(div_url);
+
+            
         }
     }
     
