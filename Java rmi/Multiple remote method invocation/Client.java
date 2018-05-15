@@ -29,6 +29,8 @@ public class Client
             String mul_url = "rmi://localhost/MultipicationService";
 
             Calculator mul_obj = (Calculator) Naming.lookup(mul_url);
+
+            String div_url = "rmi://localhost/DivisionService";
         }
     }
     
