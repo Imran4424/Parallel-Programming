@@ -43,7 +43,7 @@ public class Client
         catch (MalformedURLException malurl) 
         {
             System.out.println();
-            System.out.println();
+            System.out.println("Malformed URL Exception");
             System.out.println();
         }
     }
