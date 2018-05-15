@@ -56,7 +56,7 @@ public class Client
         }
         catch(NotBoundException notbe)
         {
-            
+            System.out.println();
         }
     }
     
