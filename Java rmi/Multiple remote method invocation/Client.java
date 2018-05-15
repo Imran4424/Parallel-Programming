@@ -63,6 +63,8 @@ public class Client
         catch(ArithmeticException arie)
         {
             System.out.println();
+            System.out.println();
+            System.out.println();
         }
     }
     
