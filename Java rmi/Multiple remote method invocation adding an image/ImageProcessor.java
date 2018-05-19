@@ -18,6 +18,6 @@ public interface ImageProcessor extends Remote
      * Declaring the method prototype
     */
 
-    public ImageIcon setWaterMarkOne(ImageIcon img) throws RemoteException, IOException;
+    public ImageIcon setWaterMark(ImageIcon img) throws RemoteException, IOException;
 
 }
