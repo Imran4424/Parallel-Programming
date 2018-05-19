@@ -21,7 +21,7 @@ public interface ImageProcessor extends Remote
 
     public ImageIcon setWaterMarkOne(ImageIcon img) throws RemoteException, IOException;
 
-    public int sum(int x,int y) throws RemoteException;
+    
 
     public ImageIcon setWaterMarkTwo(ImageIcon img) throws RemoteException, IOException;
 
