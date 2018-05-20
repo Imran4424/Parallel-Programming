@@ -3,7 +3,6 @@ import net.coobird.thumbnailator.geometry.*;
 
 
 import java.awt.Graphics;
-
 import java.awt.image.BufferedImage;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
