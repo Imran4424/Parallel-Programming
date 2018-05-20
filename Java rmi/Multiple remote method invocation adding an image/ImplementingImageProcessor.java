@@ -13,7 +13,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import javax.swing.text.Position;
+//import javax.swing.text.Position;
 //import java.io.NotSerializableException;
 //import java.io.Serializable;
 
