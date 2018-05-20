@@ -12,7 +12,6 @@ import javax.swing.ImageIcon;
 
 
 
-
 /**
  * ImplementingImageProcessor
  */
