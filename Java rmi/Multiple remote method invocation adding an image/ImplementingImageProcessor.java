@@ -2,7 +2,6 @@ import net.coobird.thumbnailator.filters.*;
 import net.coobird.thumbnailator.geometry.*;
 
 
-
 import java.awt.Graphics;
 //import java.awt.Image;
 import java.awt.image.BufferedImage;
