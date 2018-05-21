@@ -18,7 +18,13 @@ public class EmployeeThree
         catch (Exception e) 
         {
             //TODO: handle exception
+
+            System.out.println("Trouble " + e);
         }
     }
-    
+
+    public static void main(String[] args) 
+    {
+        new EmployeeThree();    
+    }
 }
