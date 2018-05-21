@@ -15,9 +15,17 @@ public class EmployeeOne
 
             Naming.rebind(url, obj);
         } 
-        catch (Exception e) {
+        catch (Exception e) 
+        {
             //TODO: handle exception
+
+            System.out.println("Trouble " + e);
         }
+    }
+
+    public static void main(String[] args) 
+    {
+        
     }
     
 }
