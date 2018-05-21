@@ -1,5 +1,4 @@
-
-
+import java.rmi.Naming;
 
 /**
  * EmployeeThree
@@ -13,6 +12,8 @@ public class EmployeeThree
             ImageProcessor obj = new ImplementingImageProcessor();
             
             String url = "rmi://localhost:1099/EmployeeThreeService";
+
+            Naming.rebind(url, obj);
         } 
         catch (Exception e) 
         {
