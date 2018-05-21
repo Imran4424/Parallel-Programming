@@ -6,6 +6,9 @@
  */
 public class EmployeeOne 
 {
-    
+    public EmployeeOne()
+    {
+        
+    }
     
 }
