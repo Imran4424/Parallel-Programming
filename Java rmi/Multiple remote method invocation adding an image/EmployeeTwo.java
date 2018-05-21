@@ -19,8 +19,12 @@ public class EmployeeTwo
         {
             //TODO: handle exception
 
-            
+            System.out.println("Trouble " + e);
         }
     }
-    
+
+    public static void main(String[] args) 
+    {
+        new EmployeeTwo();    
+    }
 }
