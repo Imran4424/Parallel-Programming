@@ -7,7 +7,7 @@ public class Manager
 {
     public static void main(String[] args) throws IOException 
     {
-        new Manager();
+        new Manager().Image_Operations();
     }
 
     public void Image_Operations() 
