@@ -9,5 +9,10 @@ public class Manager
     {
         new Manager();
     }
+
+    public void Image_Operations() 
+    {
+        
+    }
     
 }
