@@ -11,7 +11,7 @@ public class EmployeeTwo
         {
             ImageProcessor obj = new ImplementingImageProcessor();
             
-            String url = "";
+            String url = "rmi://localhost:1099/EmployeeTwoService";
         } 
         catch (Exception e) 
         {
