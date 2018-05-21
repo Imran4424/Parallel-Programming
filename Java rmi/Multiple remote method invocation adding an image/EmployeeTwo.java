@@ -10,7 +10,7 @@ public class EmployeeTwo
     {
         try 
         {
-            
+            ImageProcessor obj = new ImplementingImageProcessor();    
         } 
         catch (Exception e) 
         {
