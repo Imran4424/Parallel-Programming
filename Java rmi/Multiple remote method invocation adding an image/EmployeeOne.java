@@ -1,5 +1,4 @@
-
-
+import java.rmi.Naming;
 
 /**
  * EmployeeOne
@@ -13,6 +12,8 @@ public class EmployeeOne
             ImageProcessor obj = new ImplementingImageProcessor();
             
             String url = "rmi://localhost:1099/EmployeeOneService";
+
+            Naming.rebind(url, obj);
         } 
         catch (Exception e) {
             //TODO: handle exception
