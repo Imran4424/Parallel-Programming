@@ -11,7 +11,7 @@ public class EmployeeTwo
         {
             ImageProcessor obj = new ImplementingImageProcessor();
             
-            String url = 
+            String url = "";
         } 
         catch (Exception e) 
         {
