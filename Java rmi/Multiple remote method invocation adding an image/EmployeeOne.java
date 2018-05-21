@@ -25,7 +25,7 @@ public class EmployeeOne
 
     public static void main(String[] args) 
     {
-        
+        new EmployeeOne();    
     }
     
 }
