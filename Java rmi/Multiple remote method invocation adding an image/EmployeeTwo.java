@@ -1,5 +1,4 @@
-
-
+import javax.print.DocFlavor.STRING;
 
 /**
  * EmployeeTwo
@@ -10,7 +9,9 @@ public class EmployeeTwo
     {
         try 
         {
-            ImageProcessor obj = new ImplementingImageProcessor();    
+            ImageProcessor obj = new ImplementingImageProcessor();
+            
+            String url = 
         } 
         catch (Exception e) 
         {
