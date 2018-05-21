@@ -1,0 +1,11 @@
+
+
+
+/**
+ * Manager
+ */
+public class Manager 
+{
+
+    
+}
