@@ -1,3 +1,4 @@
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.rmi.Naming;
@@ -69,7 +70,9 @@ public class Manager
 
             BufferedImage waterImagebf_One = new BufferedImage(waterImageOne.getIconWidth(), waterImageOne.getIconHeight(), BufferedImage.TYPE_INT_RGB); 
             
-
+            Graphics g = waterImagebf_One.createGraphics();
+            waterImageOne.paintIcon(null, g, 0, 0); //paint the ImageIcon to the empty BufferedImage
+            g.dispose();
         } 
         catch (Exception e) 
         {
