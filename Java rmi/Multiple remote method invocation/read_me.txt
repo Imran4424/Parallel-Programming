@@ -13,15 +13,44 @@ Steps to compile and run
 	In first terminal:
 
 		1.	javac *.java
-		2.	rmic ImplementingAdder
+		2.	rmic Addition
 		3.	rmiregistry
 
 
 	In second terminal:
 
-			java AdditionServer
+		1. rmic Substraction
+		2. rmiregistry
 
 
 	In third terminal:
 
-			java AdditionClient
+		1. rmic Multipication
+		2. rmiregistry
+
+	In forth terminal:
+
+		1. rmic Division
+		2. rmiregistry
+
+	In fifth terminal:
+
+		java AdditionServer
+
+	In sixth terminal:
+
+		java SubstractionServer
+
+	In seventh terminal:
+
+		java MultipicationServer
+
+
+	In Eighth terminal:
+
+		Java DivsionServer
+
+
+	In ninth terminal:
+
+		java Client
