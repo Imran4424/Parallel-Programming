@@ -36,7 +36,18 @@ public class Manager
         }
 
 
-        
+        /**
+         * Distributing spilt Images among the Employees
+         */
+
+        try 
+        {
+                
+        } 
+        catch (Exception e) 
+        {
+            //TODO: handle exception
+        }
     }
     
 }
