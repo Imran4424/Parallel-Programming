@@ -82,8 +82,23 @@ public class Manager
                     waterImageTwo.getIconHeight(), BufferedImage.TYPE_INT_RGB);
 
             Graphics g_2 = waterImagebf_Two.createGraphics();
-            waterImageTwo.paintIcon(null, g, 0, 0); // paint the ImageIcon to the empty BufferedImage
+            waterImageTwo.paintIcon(null, g_2, 0, 0); // paint the ImageIcon to the empty BufferedImage
             g_2.dispose();
+
+
+            // working on part one
+
+            ImageIcon waterImageThree = obj_three.setWaterMark(new ImageIcon(splitImages[2]));
+
+            BufferedImage waterImagebf_Three = new BufferedImage(waterImageThree.getIconWidth(),
+                    waterImageThree.getIconHeight(), BufferedImage.TYPE_INT_RGB);
+
+            Graphics g_3 = waterImagebf_Three.createGraphics();
+            waterImageThree.paintIcon(null, g_3, 0, 0); // paint the ImageIcon to the empty BufferedImage
+            g_3.dispose();
+
+
+            
 
         } 
         catch (Exception e) 
