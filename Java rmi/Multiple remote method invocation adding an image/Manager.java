@@ -1,5 +1,6 @@
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.rmi.Naming;
 
 import javax.imageio.ImageIO;
 
@@ -42,7 +43,21 @@ public class Manager
 
         try 
         {
-                
+            /**
+             * creating objects fro each of the employee
+             */
+
+            String url_one = "rmi://localhost/EmployeeOneService";
+            ImageProcessor obj_one = (ImageProcessor) Naming.lookup(url_one);
+
+
+            String url_two = "rmi://localhost/EmployeeTwoService";
+            ImageProcessor obj_two = (ImageProcessor) Naming.lookup(url_two);
+
+
+            String url_three = "rmi://localhost/EmployeeThreeService";
+            ImageProcessor obj_three = (ImageProcessor) Naming.lookup(url_three);
+
         } 
         catch (Exception e) 
         {
