@@ -39,13 +39,13 @@ public class Manager
 
         /**
          * Distributing spilt Images among the Employees
-         */
+        */
 
         try 
         {
             /**
              * creating objects fro each of the employee
-             */
+            */
 
             String url_one = "rmi://localhost/EmployeeOneService";
             ImageProcessor obj_one = (ImageProcessor) Naming.lookup(url_one);
@@ -60,11 +60,12 @@ public class Manager
 
             /**
              * Distributing the parts
-             */
+            */
 
             //working on part one
 
             
+
 
         } 
         catch (Exception e) 
