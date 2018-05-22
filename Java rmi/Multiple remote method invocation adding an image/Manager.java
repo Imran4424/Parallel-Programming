@@ -73,6 +73,18 @@ public class Manager
             Graphics g = waterImagebf_One.createGraphics();
             waterImageOne.paintIcon(null, g, 0, 0); //paint the ImageIcon to the empty BufferedImage
             g.dispose();
+
+            // working on part one
+
+            ImageIcon waterImageTwo = obj_two.setWaterMark(new ImageIcon(splitImages[1]));
+
+            BufferedImage waterImagebf_Two = new BufferedImage(waterImageTwo.getIconWidth(),
+                    waterImageTwo.getIconHeight(), BufferedImage.TYPE_INT_RGB);
+
+            Graphics g_2 = waterImagebf_Two.createGraphics();
+            waterImageTwo.paintIcon(null, g, 0, 0); // paint the ImageIcon to the empty BufferedImage
+            g_2.dispose();
+
         } 
         catch (Exception e) 
         {
