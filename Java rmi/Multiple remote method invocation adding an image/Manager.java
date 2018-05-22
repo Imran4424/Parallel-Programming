@@ -104,13 +104,47 @@ public class Manager
 
             BufferedImage final_waterImage = combine_all(readImage,waterImagebf_One,waterImagebf_Two,waterImagebf_Three);
 
-            
+
 
         } 
         catch (Exception e) 
         {
             //TODO: handle exception
         }
+    }
+
+
+    public BufferedImage combine_all(BufferedImage img, BufferedImage waImg, BufferedImage waImg2,BufferedImage waImg3) 
+    {
+        int currentheight = 0;
+
+        BufferedImage combined_Image = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
+
+        Graphics2D g2d = combined_Image.createGraphics();
+
+        for (int i = 0; i < 3; i++) 
+        {
+            if (i == 0) 
+            {
+                g2d.drawImage(waImg, 0, currentheight, null);
+            }
+
+            if (i == 1) 
+            {
+                g2d.drawImage(waImg2, 0, currentheight, null);
+            }
+
+            if (i == 2) 
+            {
+                g2d.drawImage(waImg3, 0, currentheight, null);
+            }
+
+            currentheight += img.getHeight() / 3;
+        }
+
+        g2d.dispose();
+
+        return combined_Image;
     }
     
 }
