@@ -19,9 +19,18 @@ Steps to compile and run
 
 	In second terminal:
 
-			java 
+			java EmployeeOne
 
 
 	In third terminal:
 
-			java AdditionClient
+			java EmployeeTwo
+
+
+	In fourth terminal:
+
+			java EmployeeThree
+
+	In fifth terminal:
+
+			java Manager
