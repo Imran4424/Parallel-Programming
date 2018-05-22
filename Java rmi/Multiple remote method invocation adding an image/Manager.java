@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.rmi.Naming;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
 /**
  * Manager
@@ -64,8 +65,10 @@ public class Manager
 
             //working on part one
 
-            
+            ImageIcon waterImageOne = obj_one.setWaterMark(new ImageIcon(splitImages[0]));
 
+            BufferedImage waterImagebf_One = new BufferedImage(waterImageOne.getIconWidth(), waterImageOne.getIconHeight(), BufferedImage.TYPE_INT_RGB); 
+            
 
         } 
         catch (Exception e) 
