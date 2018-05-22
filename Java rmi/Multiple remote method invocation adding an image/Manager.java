@@ -158,8 +158,8 @@ public class Manager
     }
 
 
-    public void Display()
+    public void Display(BufferedImage readImage, BufferedImage waterImage)
     {
-        
+
     }
 }
