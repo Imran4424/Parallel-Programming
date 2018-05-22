@@ -156,5 +156,10 @@ public class Manager
         
         return combined_Image;
     }
-    
+
+
+    public void Display()
+    {
+        
+    }
 }
