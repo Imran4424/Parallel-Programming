@@ -1,4 +1,5 @@
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.rmi.Naming;
@@ -114,12 +115,17 @@ public class Manager
     }
 
 
-    public BufferedImage combine_all(BufferedImage img, BufferedImage waImg, BufferedImage waImg2,BufferedImage waImg3) 
+    public BufferedImage combine_all(BufferedImage readImage, BufferedImage waImg, BufferedImage waImg2,BufferedImage waImg3) 
     {
-        int currentheight = 0;
+        int currentheight = 0; //this is the current height of combined image
 
-        BufferedImage combined_Image = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
+        /**
+         * taking an empty buffered image in size of main image
+        */
+        
+        BufferedImage combined_Image = new BufferedImage(readImage.getWidth(), readImage.getHeight(), BufferedImage.TYPE_INT_RGB);
 
+        
         Graphics2D g2d = combined_Image.createGraphics();
 
         for (int i = 0; i < 3; i++) 
