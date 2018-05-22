@@ -1,3 +1,5 @@
+import java.awt.FlowLayout;
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -6,6 +8,7 @@ import java.rmi.Naming;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 /**
@@ -110,7 +113,7 @@ public class Manager
              * Displaying the Images 
             */
 
-            
+            Display(readImage, final_waterImage);
 
         } 
         catch (Exception e) 
@@ -164,7 +167,14 @@ public class Manager
         JLabel originalImage = new JLabel(new ImageIcon(readImage));
         JLabel processedImage = new JLabel(new ImageIcon(waterImage));
 
-        
+        JFrame frame = new JFrame();
+        frame.setSize(1200, 900);
+        frame.setLayout(new FlowLayout());
 
+        frame.add(originalImage);
+        frame.add(processedImage);
+
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
