@@ -24,7 +24,7 @@ public class Manager
         new Manager().Image_Operations();
     }
 
-    public void Image_Operations() 
+    public void Image_Operations() throws IOException
     {
         /**
          * Reading the Image
