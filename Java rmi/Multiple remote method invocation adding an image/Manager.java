@@ -98,6 +98,12 @@ public class Manager
             g_3.dispose();
 
 
+            /**
+             * Combining all Images
+            */
+
+            BufferedImage final_waterImage = combine_all(readImage,waterImagebf_One,waterImagebf_Two,waterImagebf_Three);
+
             
 
         } 
