@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.rmi.Naming;
 
 import javax.imageio.ImageIO;
@@ -116,9 +117,11 @@ public class Manager
             Display(readImage, final_waterImage);
 
         } 
-        catch (Exception e) 
+        catch (MalformedURLException malurl) 
         {
-            //TODO: handle exception
+            System.out.println();
+            System.out.println("Malfromed url Exception");
+            System.out.println();
         }
     }
 
