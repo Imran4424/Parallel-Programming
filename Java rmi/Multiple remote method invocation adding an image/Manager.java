@@ -159,7 +159,7 @@ public class Manager
         
         Graphics2D g2d = combined_Image.createGraphics();
         
-        int currentheight = img.getHeight() / 3 ; //this indicate the position from where Image will be drown
+        int currentheight = readImage.getHeight() / 3 ; //this indicate the position from where Image will be drown
         
         for (int i = 0; i < 3; i++) 
         {
