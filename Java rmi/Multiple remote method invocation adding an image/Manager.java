@@ -58,6 +58,14 @@ public class Manager
             String url_three = "rmi://localhost/EmployeeThreeService";
             ImageProcessor obj_three = (ImageProcessor) Naming.lookup(url_three);
 
+            /**
+             * Distributing the parts
+             */
+
+            //working on part one
+
+            
+
         } 
         catch (Exception e) 
         {
