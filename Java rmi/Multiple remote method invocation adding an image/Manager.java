@@ -137,10 +137,10 @@ public class Manager
             System.out.println("Not Bound Exception");
             System.out.println();
         }
-        catch (MalformedURLException malurl) 
+        catch (ArithmeticException arexc) 
         {
             System.out.println();
-            System.out.println("Malfromed url Exception");
+            System.out.println("Arithematic Exception");
             System.out.println();
         }
 
