@@ -6,6 +6,7 @@ import java.rmi.Naming;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  * Manager
@@ -160,6 +161,10 @@ public class Manager
 
     public void Display(BufferedImage readImage, BufferedImage waterImage)
     {
+        JLabel originalImage = new JLabel(new ImageIcon(readImage));
+        JLabel processedImage = new JLabel(new ImageIcon(waterImage));
+
+        
 
     }
 }
