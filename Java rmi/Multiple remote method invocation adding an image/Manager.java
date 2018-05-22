@@ -105,7 +105,11 @@ public class Manager
 
             BufferedImage final_waterImage = combine_all(readImage,waterImagebf_One,waterImagebf_Two,waterImagebf_Three);
 
+            /**
+             * Displaying the Images 
+            */
 
+            
 
         } 
         catch (Exception e) 
@@ -117,39 +121,39 @@ public class Manager
 
     public BufferedImage combine_all(BufferedImage readImage, BufferedImage waImg, BufferedImage waImg2,BufferedImage waImg3) 
     {
-        int currentheight = 0; //this is the current height of combined image
-
+        
         /**
          * taking an empty buffered image in size of main image
         */
         
         BufferedImage combined_Image = new BufferedImage(readImage.getWidth(), readImage.getHeight(), BufferedImage.TYPE_INT_RGB);
-
+        
         
         Graphics2D g2d = combined_Image.createGraphics();
-
+        
+        int currentheight = img.getHeight() / 3 ; //this indicate the position from where Image will be drown
+        
         for (int i = 0; i < 3; i++) 
         {
             if (i == 0) 
             {
-                g2d.drawImage(waImg, 0, currentheight, null);
+                g2d.drawImage(waImg, 0, i*currentheight, null);
             }
-
+            
             if (i == 1) 
             {
-                g2d.drawImage(waImg2, 0, currentheight, null);
+                g2d.drawImage(waImg2, 0, i*currentheight, null);
             }
-
+            
             if (i == 2) 
             {
-                g2d.drawImage(waImg3, 0, currentheight, null);
+                g2d.drawImage(waImg3, 0, i*currentheight, null);
             }
-
-            currentheight += img.getHeight() / 3;
+            
         }
-
+        
         g2d.dispose();
-
+        
         return combined_Image;
     }
     
