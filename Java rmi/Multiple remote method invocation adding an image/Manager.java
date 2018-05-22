@@ -6,6 +6,8 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -123,6 +125,25 @@ public class Manager
             System.out.println("Malfromed url Exception");
             System.out.println();
         }
+        catch (RemoteException re) 
+        {
+            System.out.println();
+            System.out.println("Remote Exception");
+            System.out.println();
+        }
+        catch (NotBoundException nbe) 
+        {
+            System.out.println();
+            System.out.println("Not Bound Exception");
+            System.out.println();
+        }
+        catch (MalformedURLException malurl) 
+        {
+            System.out.println();
+            System.out.println("Malfromed url Exception");
+            System.out.println();
+        }
+
     }
 
 
