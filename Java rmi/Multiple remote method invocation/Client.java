@@ -12,7 +12,7 @@ public class Client
     /**
      * This client has no remote method
      * 
-     *  
+     * He uses class 
     */
 
 
