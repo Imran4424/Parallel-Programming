@@ -10,7 +10,7 @@ import java.util.Calendar;
 public class Client 
 {
     /**
-     * This client has no remote 
+     * This client has no remote  
     */
 
 
