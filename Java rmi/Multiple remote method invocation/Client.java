@@ -16,7 +16,7 @@ public class Client
      * AdditionServer, SubstractionServer, MultipicationServer, DivisonServer
      * to do his jobs
      * 
-     * Cause these classes has their own  
+     * Cause these classes has their own remote method 
     */
 
 
