@@ -18,7 +18,7 @@ public class Client
      * 
      * Cause these classes has their own remote method
      * 
-     * They create their own remote methods 
+     * They create their own remote methods by implementing and overriding the "Calculator" Interface 
     */
 
 
