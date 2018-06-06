@@ -18,7 +18,6 @@ public class Client
         try 
         {
 
-
             String add_url = "rmi://localhost/AdditionService";
     
             Calculator add_obj = (Calculator) Naming.lookup(add_url);
