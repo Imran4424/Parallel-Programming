@@ -12,7 +12,7 @@ public class Client
     /**
      * This client has no remote method
      * 
-     * He uses classes like AdditionServer, SubstractionServer 
+     * He uses classes like AdditionServer, SubstractionServer, Multipication 
     */
 
 
