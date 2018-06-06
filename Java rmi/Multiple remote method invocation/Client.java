@@ -13,6 +13,7 @@ public class Client
     {
         int x = Integer.parseInt(args[0]);
 
+
         
         
         int y = Integer.parseInt(args[1]);
