@@ -18,6 +18,7 @@ public class Client
         try 
         {
 
+
             
             String add_url = "rmi://localhost/AdditionService";
     
