@@ -16,7 +16,6 @@ public class Client
 
 
 
-
         int y = Integer.parseInt(args[1]);
 
         try 
