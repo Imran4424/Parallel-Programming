@@ -12,7 +12,11 @@ public class Client
     /**
      * This client has no remote method
      * 
-     * He uses classes like AdditionServer, SubstractionServer, MultipicationServer, DivisonServer 
+     * He uses classes like 
+     * AdditionServer, SubstractionServer, MultipicationServer, DivisonServer
+     * to do his jobs
+     * 
+     * Cause these classes has their own  
     */
 
 
