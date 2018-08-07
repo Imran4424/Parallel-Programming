@@ -10,7 +10,8 @@ int main(int argc, char const *argv[])
 	int total_process;        // total number of process
 	int my_rank;             // process rank
 
-	MPI
+	MPI_init(NULL,NULL);
+	
 
 
 	return 0;
