@@ -32,6 +32,6 @@ int main(int argc, char const *argv[])
 		}
 	}
 
-
+	MPI_Finalize();
 	return 0;
 }
