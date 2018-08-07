@@ -17,6 +17,8 @@ int main(int argc, char const *argv[])
 	if (my_rank != 0)
 	{
 		sprintf(welcome,"welcome to the MPI world from process %d of total processes %d", my_rank, total_process);
+
+		printf("I am here, send\n");
 		
 		MPI_Send(welcome, strlen(welcome)+1, MPI_CHAR, 0, 0, MPI_COMM_WORLD);
 	}
@@ -26,6 +28,8 @@ int main(int argc, char const *argv[])
 
 		for (int i = 0; i < total_process; ++i)
 		{
+			printf("I am here\n");
+
 			MPI_Recv(welcome, maxString, MPI_CHAR, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
 			printf("%s\n", welcome);
