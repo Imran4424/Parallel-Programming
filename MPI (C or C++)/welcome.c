@@ -11,7 +11,8 @@ int main(int argc, char const *argv[])
 	int my_rank;             // process rank
 
 	MPI_init(NULL,NULL);
-	
+	MPI_Comm_size(MPI_COMM_WORLD, &total_process);
+	MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
 
 
 	return 0;
