@@ -18,6 +18,10 @@ int main(int argc, char const *argv[])
 	{
 		sprintf(welcome,"welcome to the MPI world from process %d of total processes %d", my_rank, total_process);
 	}
+	else
+	{
+		
+	}
 
 
 	return 0;
