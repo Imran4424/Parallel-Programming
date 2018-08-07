@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
 
 		for (int i = 0; i < total_process; ++i)
 		{
-			
+			MPI_Recv(welcome, maxString, MPI_CHAR, q,0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		}
 	}
 
