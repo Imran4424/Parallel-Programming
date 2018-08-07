@@ -14,6 +14,11 @@ int main(int argc, char const *argv[])
 	MPI_Comm_size(MPI_COMM_WORLD, &total_process);
 	MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
 
+	if (my_rank != 0)
+	{
+		sprintf(welcome,"welcome to the MPI world from process %d of total processes %d", my_rank, total_process);
+	}
+
 
 	return 0;
 }
