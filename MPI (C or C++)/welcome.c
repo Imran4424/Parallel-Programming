@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 	{
 		printf("Greetings from process %d of %d!\n", my_rank, total_process);
 
-		for (int i = 0; i < total_process; ++i)
+		for (int i = 1; i < total_process; ++i)
 		{
 			printf("I am here\n");
 
