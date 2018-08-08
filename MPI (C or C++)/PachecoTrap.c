@@ -107,7 +107,8 @@ float Trap(
 
     integral = (f(local_a) + f(local_b))/2.0;
     x = local_a;
-    for (i = 1; i <= local_n-1; i++) {
+    for (i = 1; i <= local_n-1; i++) 
+    {
         x = x + h;
         integral = integral + f(x);
     }
