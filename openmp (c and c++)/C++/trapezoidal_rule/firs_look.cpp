@@ -61,7 +61,7 @@ int main(int argc, char const *argv[])
 		Trap(a, b, n, &global_result);
 	}
 
-	cout<<"with n = "<<n<<"trapezoids, our estimate"<<endl;
+	cout<<"with n = "<<n<<" trapezoids, our estimate"<<endl;
 	cout<<"of the integral from "<<a<<" to "<<b<<" = "<<global_result<<endl;
 
 	return 0;
