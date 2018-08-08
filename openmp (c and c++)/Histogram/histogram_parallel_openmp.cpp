@@ -15,14 +15,14 @@ int main(int argc, char const *argv[])
 
 	int length = (int) sizeof(data)/ sizeof(data[0]);
 
-	//printf("%d\n", length);
+	printf("%d\n", length);
 
 	#pragma omp parallel for
 	for (int i = 0; i < length; ++i)
 	{
 		pthread_mutex_lock(&key);
 
-		//printf("Thread id %d\n", omp_get_thread_num());
+		printf("Thread id %d\n", omp_get_thread_num());
 
 		if(bins.count(int(data[i])) == 0)
 		{
