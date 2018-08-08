@@ -6,5 +6,5 @@ import java.rmi.Remote;
 public interface Prime extends Remote
 {
 
-    
+    public int[] DeteminingPrime(int[] ar);    
 }
