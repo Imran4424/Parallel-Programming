@@ -18,7 +18,13 @@ void Trap(double a, double b, int n, double* global_result)
 	double local_a = a + my_rank*local_n*h;
 	double local_b = local_a + local_n*h;
 
-	
+	double my_result = (f(local_a) + f(local_b)) / 2.0;
+	double x;
+
+	for (int i = 1; i < local_n; ++i)
+	{
+		
+	}
 }
 
 int main(int argc, char const *argv[])
