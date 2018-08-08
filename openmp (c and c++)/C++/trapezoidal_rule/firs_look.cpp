@@ -3,11 +3,8 @@
 #include <omp.h>
 using namespace std;
 
-void Trap(double a, double b, int n, double* global_result)
+void Trap(double a, double b, int n, double* global_result_p)
 {
-	double h,x,my_result;
-	double local_a,local_b;
-
 	int thread_count = omp_get_num_threads();
 	int my_rank = omp_get_thread_num();
 
@@ -23,7 +20,15 @@ void Trap(double a, double b, int n, double* global_result)
 
 	for (int i = 1; i < local_n; ++i)
 	{
-		
+		x = local_a + i*h;
+		my_result += f(x);
+	}
+
+	my_result = my_result*h;
+
+	#pragma omp critical
+	{
+		*global_result_p += my_result;
 	}
 }
 
@@ -39,6 +44,12 @@ int main(int argc, char const *argv[])
 
 	cin>>a>>b>>n;
 
+	#pragma omp parallel
+	{
+		Trap(a, b, n, &global_result);
+	}
+
+	
 
 	return 0;
 }
