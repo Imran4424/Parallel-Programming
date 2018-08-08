@@ -78,8 +78,7 @@ main(int argc, char** argv)
     } 
     else 
     {  
-        MPI_Send(&integral, 1, MPI_FLOAT, dest,
-            tag, MPI_COMM_WORLD);
+        MPI_Send(&integral, 1, MPI_FLOAT, dest, tag, MPI_COMM_WORLD);
     }
 
     /* Print the result */
