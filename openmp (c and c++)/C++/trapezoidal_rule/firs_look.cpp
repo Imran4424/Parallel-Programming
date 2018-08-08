@@ -43,6 +43,12 @@ int main(int argc, char const *argv[])
 	double a,b;
 	int n;
 
+	if (argc != 2)
+	{
+      fprintf(stderr, "usage: %s <number of threads>\n", argv[0]);
+      exit(0);
+   	}
+
 	int thread_count = strtol(argv[1], NULL, 10);
 
 	cout<<"enter the values of a b n"<<endl;
