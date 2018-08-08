@@ -87,10 +87,8 @@ main(int argc, char** argv)
     /* Print the result */
     if (my_rank == 0) 
     {
-        printf("With n = %d trapezoids, our estimate\n",
-            n);
-        printf("of the integral from %f to %f = %f\n",
-            a, b, total);
+        printf("With n = %d trapezoids, our estimate\n", n);
+        printf("of the integral from %f to %f = %f\n", a, b, total);
     }
 
     /* Shut down MPI */
