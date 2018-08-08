@@ -1,4 +1,5 @@
 import java.rmi.Remote;
+import java.rmi.RemoteException;
 
 /**
  * Prime
@@ -6,5 +7,5 @@ import java.rmi.Remote;
 public interface Prime extends Remote
 {
 
-    public int[] DeteminingPrime(int[] ar);    
+    public int[] DeteminingPrime(int[] ar, int size) throws RemoteException;    
 }

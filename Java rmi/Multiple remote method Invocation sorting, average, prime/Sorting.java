@@ -1,7 +1,7 @@
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.rmi.Remote;
 
-import com.sun.org.apache.bcel.internal.generic.SWAP;
 
 /**
  * Sorting
@@ -14,7 +14,7 @@ public class Sorting extends UnicastRemoteObject implements Sort
     }
     
     @Override
-    public int[] Sorted(int[] ar, int size) 
+    public int[] Sorted(int[] ar, int size) throws RemoteException
     {
 
         for (int i = 0; i < size - 1; i++) 

@@ -11,8 +11,8 @@ public class AverageCal extends UnicastRemoteObject implements Average
         super();
     }
     
-    @Override
-    public int CalculatingAverage(int[] ar, int size) {
+    public int CalculatingAverage(int[] ar, int size) throws RemoteException
+    {
         
         int sum = 0;
 
