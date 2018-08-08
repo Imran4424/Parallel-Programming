@@ -26,7 +26,8 @@
 #include "mpi.h"
 
 
-main(int argc, char** argv) {
+main(int argc, char** argv) 
+{
     int         my_rank;   /* My process rank           */
     int         p;         /* The number of processes   */
     float       a = 0.0;   /* Left endpoint             */
@@ -67,20 +68,25 @@ main(int argc, char** argv) {
     integral = Trap(local_a, local_b, local_n, h);
 
     /* Add up the integrals calculated by each process */
-    if (my_rank == 0) {
+    if (my_rank == 0) 
+    {
         total = integral;
-        for (source = 1; source < p; source++) {
+        for (source = 1; source < p; source++) 
+        {
             MPI_Recv(&integral, 1, MPI_FLOAT, source, tag,
                 MPI_COMM_WORLD, &status);
             total = total + integral;
         }
-    } else {  
+    } 
+    else 
+    {  
         MPI_Send(&integral, 1, MPI_FLOAT, dest,
             tag, MPI_COMM_WORLD);
     }
 
     /* Print the result */
-    if (my_rank == 0) {
+    if (my_rank == 0) 
+    {
         printf("With n = %d trapezoids, our estimate\n",
             n);
         printf("of the integral from %f to %f = %f\n",
@@ -115,7 +121,8 @@ float Trap(
 } /*  Trap  */
 
 
-float f(float x) {
+float f(float x) 
+{
     float return_val;
     /* Calculate f(x). */
     /* Store calculation in return_val. */
