@@ -3,6 +3,11 @@
 #include <omp.h>
 using namespace std;
 
+double f(double x)
+{
+	return x*x;
+}
+
 void Trap(double a, double b, int n, double* global_result_p)
 {
 	int thread_count = omp_get_num_threads();
@@ -49,7 +54,8 @@ int main(int argc, char const *argv[])
 		Trap(a, b, n, &global_result);
 	}
 
-	
+	cout<<"with n = "<<n<<"trapezoids, our estimate"<<endl;
+	cout<<"of the integral from "<<a<<" to "<<b<<" = "<<global_result<<endl;
 
 	return 0;
 }
