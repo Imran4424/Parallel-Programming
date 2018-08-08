@@ -23,7 +23,7 @@
 #include <stdio.h>
 
 /* We'll be using MPI routines, definitions, etc. */
-#include "mpi.h"
+#include <mpi.h>
 
 
 main(int argc, char** argv) 
