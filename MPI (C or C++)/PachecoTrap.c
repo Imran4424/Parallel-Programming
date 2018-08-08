@@ -45,8 +45,7 @@ main(int argc, char** argv)
     int         tag = 0;
     MPI_Status  status;
 
-    float Trap(float local_a, float local_b, int local_n,
-              float h);    /* Calculate local integral  */
+    float Trap(float local_a, float local_b, int local_n, float h);    /* Calculate local integral  */
 
     /* Let the system do what it needs to start up MPI */
     MPI_Init(&argc, &argv);
@@ -73,8 +72,7 @@ main(int argc, char** argv)
         total = integral;
         for (source = 1; source < p; source++) 
         {
-            MPI_Recv(&integral, 1, MPI_FLOAT, source, tag,
-                MPI_COMM_WORLD, &status);
+            MPI_Recv(&integral, 1, MPI_FLOAT, source, tag, MPI_COMM_WORLD, &status);
             total = total + integral;
         }
     } 
