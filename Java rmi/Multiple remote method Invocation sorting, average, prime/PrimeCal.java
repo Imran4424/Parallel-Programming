@@ -24,6 +24,11 @@ public class PrimeCal extends UnicastRemoteObject implements Prime
 
             for(int j = 0; j < size; j++)
             {
+                if(ar[j] == 0)
+                {
+                    continue;
+                }
+
                 if (ar[i]% ar[j] != 0 && ar[j]  != ar[i] && ar[j] != 1) 
                 {
                     
