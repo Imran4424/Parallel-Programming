@@ -6,5 +6,5 @@ import java.rmi.Remote;
 public interface Average extends Remote
 {
 
-    public int[] CalculatingAverage(int[] ar);
+    public int CalculatingAverage(int[] ar, int size);
 }
