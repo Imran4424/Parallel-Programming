@@ -14,10 +14,10 @@ node* head = NULL; //global variable;
 
 void init()
 {
-	node* temp2 = new node();
+	node* temp = new node();
 
-	temp2 -> data = rand() % 50 + 1;
-	temp2 -> nextAddress = NULL;	
+	temp -> data = rand() % 50 + 1;
+	temp -> nextAddress = NULL;	
 
 	head = temp2;
 
