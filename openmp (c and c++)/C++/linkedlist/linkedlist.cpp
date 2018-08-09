@@ -74,7 +74,7 @@ int main(int argc, char const *argv[])
 {
 	init();
 
-	cout<<"how many threads you want to insert"<<endl;
+	cout<<"how many node you want to insert"<<endl;
 
 	int num;
 	cin>>num;
