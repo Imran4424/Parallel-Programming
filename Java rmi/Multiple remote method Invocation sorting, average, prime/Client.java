@@ -48,7 +48,7 @@ public class Client
 
             System.out.print("Prime numbers are: ");
 
-            for (int i = 0; i < prime[i]; i++) {
+            for (int i = 1; i <= prime[0]; i++) {
                 System.out.print(" " + prime[i]);
             }
             System.out.println();

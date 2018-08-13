@@ -14,13 +14,15 @@ public class PrimeCal extends UnicastRemoteObject implements Prime
     @Override
     public int[] DeteminingPrime(int[] ar, int size) throws RemoteException
     {   
-        int[] prime_num = new int[size];
+        int[] prime_num = new int[size + 1];
 
         int m = 1;
 
+        Boolean check = true;
+
         for (int i = 0; i < size; i++) 
         {
-            Boolean check = true;
+            check = true;
 
             for(int j = 0; j < size; j++)
             {
@@ -29,19 +31,48 @@ public class PrimeCal extends UnicastRemoteObject implements Prime
                     continue;
                 }
 
-                if (ar[i]% ar[j] != 0 && ar[j]  != ar[i] && ar[j] != 1) 
+                if(ar[i] == 0 || ar[i] == 1)
                 {
-                    
+                    check = false;
+                    j = size;
+                    continue;
+                }
+
+                if(ar[i]%2 == 0 && ar[i] != 2)
+                {
+                    check = false;
+                    j = size;
+                    continue;
+                }
+                else if(ar[i] % 3 == 0 && ar[i] != 3)
+                {
+                    check = false;
+                    j = size;
+                    continue;
+                }
+                else if(ar[i] % 5 == 0 && ar[i] != 5)
+                {
+                    check = false;
+                    j = size;
+                    continue;
+                }
+                else if(ar[i] % 7 == 0 && ar[i] != 7)
+                {
+                    check = false;
+                    j = size;
+                    continue;
+                } 
+                else if (ar[i] % ar[j] == 0 && (ar[j] == ar[i] || ar[j] == 1)) 
+                {
+                    check = true;
+                    j = size;
+                    continue;
                 }
                 else
                 {
                     check = false;
                 }
-
-                if(ar[i] == 2)
-                {
-                    check = true;
-                }
+                
             }
 
             if (check) 
