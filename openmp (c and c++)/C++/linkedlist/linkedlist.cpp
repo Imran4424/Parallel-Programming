@@ -19,11 +19,12 @@ void init()
 	temp -> data = rand() % 50 + 1;
 	temp -> nextAddress = NULL;	
 
-	head = temp2;
+	head = temp;
 
 }
 
 omp_lock_t writelock; // global variable
+
 
 void insertNode()
 {
@@ -32,26 +33,26 @@ void insertNode()
 	temp -> data = rand() % 50 + 1;
 	temp -> nextAddress = NULL;
 
-	omp_init_lock(&writelock);
-	#pragma omp critical
+	
+	
+	
+	omp_set_lock(&writelock);
+	if (head == NULL)
+	{
+		head = temp;
+	}
+	else
 	{
 		node* travel = head;
-		
-		if (travel == NULL)
-		{
-			travel = temp;
-		}
-		else
-		{
-			while(travel -> nextAddress != NULL)
-			{
-				travel = travel -> nextAddress;
-			}
 
-			travel -> nextAddress = temp;
+		while(travel -> nextAddress != NULL)
+		{
+			travel = travel -> nextAddress;
 		}
+
+		travel -> nextAddress = temp;
 	}
-	omp_destroy_lock(&writelock);
+	omp_unset_lock(&writelock);
 
 }
 
@@ -72,14 +73,15 @@ void Display()
 
 int main(int argc, char const *argv[])
 {
-	init();
+
+	omp_init_lock(&writelock);
 
 	cout<<"how many node you want to insert"<<endl;
 
 	int num;
 	cin>>num;
 
-	omp_set_num_threads(num - 1);
+	omp_set_num_threads(num);
 
 	#pragma omp parallel
 	{
@@ -88,5 +90,6 @@ int main(int argc, char const *argv[])
 
 	Display();
 
+	omp_destroy_lock(&writelock);
 	return 0;
 }
