@@ -14,16 +14,7 @@ omp_lock_t writelock; // global variable
 
 node* head = NULL; //global variable;
 
-void init()
-{
-	node* temp = new node();
 
-	temp -> data = rand() % 50 + 1;
-	temp -> nextAddress = NULL;	
-
-	head = temp;
-
-}
 
 
 
