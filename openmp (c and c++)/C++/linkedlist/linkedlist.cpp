@@ -14,7 +14,6 @@ omp_lock_t writelock; // global variable
 
 node* head = NULL; //global variable;
 
-
 void insertNode()
 {
 	node* temp = new node();
