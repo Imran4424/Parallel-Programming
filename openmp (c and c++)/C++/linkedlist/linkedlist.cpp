@@ -22,7 +22,7 @@ void insertNode()
 	temp -> nextAddress = NULL;
 
 	
-	
+
 	omp_set_lock(&writelock);
 	if (head == NULL)
 	{
