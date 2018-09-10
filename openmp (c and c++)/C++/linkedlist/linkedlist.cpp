@@ -10,6 +10,8 @@ struct node
 	node* nextAddress;
 };
 
+omp_lock_t writelock; // global variable
+
 node* head = NULL; //global variable;
 
 void init()
@@ -23,7 +25,7 @@ void init()
 
 }
 
-omp_lock_t writelock; // global variable
+
 
 
 void insertNode()
