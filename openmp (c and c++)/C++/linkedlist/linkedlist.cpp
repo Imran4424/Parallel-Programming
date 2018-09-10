@@ -21,7 +21,6 @@ void insertNode()
 	temp -> data = rand() % 50 + 1;
 	temp -> nextAddress = NULL;
 
-	
 	omp_set_lock(&writelock);
 	if (head == NULL)
 	{
