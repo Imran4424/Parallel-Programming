@@ -16,7 +16,6 @@ node* head = NULL; //global variable;
 
 
 
-
 void insertNode()
 {
 	node* temp = new node();
