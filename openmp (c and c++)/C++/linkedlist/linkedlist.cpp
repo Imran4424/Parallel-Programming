@@ -75,7 +75,6 @@ void Display()
 
 int main(int argc, char const *argv[])
 {
-
 	omp_init_lock(&writelock);
 
 	cout<<"how many node you want to insert"<<endl;
