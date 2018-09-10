@@ -23,7 +23,7 @@ void insertNode()
 
 	
 	
-	
+
 	omp_set_lock(&writelock);
 	if (head == NULL)
 	{
